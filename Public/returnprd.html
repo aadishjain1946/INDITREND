@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Return Orders | IndiTrend | India's Trending Fashion Hub</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/titlelogo_icon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="Return Orders | IndiTrend | India's Trending Fashion Hub" />
+    <meta name="lang" content="en" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="https://inditrend.in/returninit" />
+    <meta property="og:image" content="https://inditrend.in/images/titlelogo_icon.ico" />
+    <meta property="og:site_name" content="IndiTrend" />
+
+
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.14.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/animate.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/style.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/media-queries.css">
+    <link rel="stylesheet" href="./assets/css/style-starter.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Custom Theme files -->
+    <script src="./assets/js/simpleCart.min.js"> </script>
+    <script src="./assets/js/main.js"></script>
+    <!-- cart -->
+    <link rel="stylesheet" href="./assets/css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/starrating.css">
+    <link rel="stylesheet" href="./assets/css/main.css"><!-- OWL CAROUSEL -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <!------------------ Angular scripts--------- -->
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./script/app.js"></script>
+    <script src="./script/models/ordermodel.js"></script>
+    <script src="./script/controller/ordercltr.js"></script>
+    <script src="./script/utils/interceptorindi.js"></script>
+</head>
+
+<body ng-app="inditrends">
+    <div class="content-wrapperadj" ng-controller="ordercltr">
+        <!-- header-section-starts -->
+        <div class="content-contentadj" ng-cloak>
+            <div class="container">
+                <h3>Select reason for Return</h3>
+                <span class="red-col">{{msgreturn}}</span>
+                <div class="form-check">
+                    <select ng-init="val=''" ng-model="val">
+                        <option value="" hidden>Select</option>
+                        <option value="1">Size Issue</option>
+                        <option value="2">Defective Product</option>
+                    </select>
+                </div>
+                <div class="form-check">
+                    <span class="blue-col" ng-if="val == 1"><small>Please make sure the product is in same condition as
+                            you
+                            received it.</small></span>
+                </div>
+                <div class="form-check">
+                    <div ng-if="val == 2">
+                        <span class="blue-col">upload the video showing clearly the defect of product.</span>
+                        <br>
+                        <span>Follow these steps : </span>
+                        <br>
+                        <span>1) Shoot Video showing the defect of product.</span>
+                        <br>
+                        <span>2) Upload video to google drive and share the link below.To know how to do it watch this
+                            video
+                            <a href="https://www.youtube.com/watch?v=9yKrJvU0qKY" style="color: blue;">here</a></span>
+                        <br>
+                        <label for="vidolink">Link</label>
+                        <input id="vidolink" type="text" placeholder="Paste link to video here">
+                        <br>
+                        <span class="red-col" ng-if="linknotfill">Please enter the link.</span>
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-danger" ng-click=returnorder(val,sizeissue,defective)>Submit</button>
+                <button class="btn btn-danger" disabled ng-if="returnloading">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/jssidebar/jquery.backstretch.min.js"></script>
+    <script src="./assets/js/jssidebar/wow.min.js"></script>
+    <script src="./assets/js/jssidebar/waypoints.min.js"></script>
+    <script src="./assets/js/jssidebar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./assets/js/jssidebar/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<div class="registration-form" ng-controller="signincltr">
+    <div class="container">
+        <h2 class="regh2adj">Log In</h2>
+        <div class="registration-grids">
+            <div class="reg-form">
+                <div class=" userregadj">
+                    <p>Welcome, Buy the Latest Fashion Trend @IndiTrend.</p>
+                    <p>Don't Have Account ? <a href="/userauth/register">Register here</a></p>
+                    <p class="googleor"><strong>Sign in with</strong></p>
+                    <div class="googlediv googlediv1">
+                        <button class="btn btn-neutral btn-icon lgooogleadj" ng-click="loginwithgoogle()">
+                            <span class="btn-inner--icon"><img src="../images/google.jpg" alt=""></span>
+                            <span class="btn-inner--text">Google</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="reg-right">
+                <div class="module-border-wrap">
+                    <form class="formreg loginformreg ">
+                        <p class="googleor"><strong>Or sign in with credentials</strong></p>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Phone Number</label>
+                            <input type="tel" class="form-control" id="exampleInputPassword1" required
+                                placeholder="Enter Your (10-Digit) Phone Number" pattern="^[0-9]{10}" ng-model="phno">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your details with
+                                anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInput12">Password</label>
+                            <input type="password" class="form-control" id="exampleInput12"
+                                placeholder="Enter Password Here" required ng-model="pwdd">
+                            <a href="/resetpassword" class="forgetpwd" target="blank">forget password</a>
+                        </div>
+                        <button type="submit" class="btn btn-success" ng-click="login(phno,pwdd)">Log In</button>
+                        <img src="../images/loader.gif" alt="IndiTrend loadin image" style="width: 30%;" ng-if="loading">
+                        <span class="red-col">{{loginmsg}}</span>
+                    </form>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

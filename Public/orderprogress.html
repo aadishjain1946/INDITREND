@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script data-ad-client="ca-pub-4370747972986025" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-181041124-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-181041124-1');
+    </script>
+    <title>Order Details | IndiTrend | India's Trending Fashion Hub</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/titlelogo_icon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="Order Details | IndiTrend | India's Trending Fashion Hub" />
+    <meta name="lang" content="en" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="https://inditrend.in/myorders" />
+    <meta property="og:image" content="https://inditrend.in/images/titlelogo_icon.ico" />
+    <meta property="og:site_name" content="IndiTrend" />
+
+
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.14.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/animate.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/style.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/media-queries.css">
+    <link rel="stylesheet" href="./assets/css/style-starter.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Custom Theme files -->
+    <script src="./assets/js/simpleCart.min.js"> </script>
+    <script src="./assets/js/main.js"></script>
+    <!-- cart -->
+    <link rel="stylesheet" href="./assets/css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/starrating.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/statusorder.css">
+    <!-- OWL CAROUSEL -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <!------------------ Angular scripts--------- -->
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./script/app.js"></script>
+    <script src="./script/models/ordermodel.js"></script>
+    <script src="./script/models/headermodel.js"></script>
+    <script src="./script/controller/headercltr.js"></script>
+    <script src="./script/controller/ordercltr.js"></script>
+    <script src="./script/utils/interceptorindi.js"></script>
+</head>
+
+<body ng-app="inditrends" class="wishlistback">
+    <div class="content-wrapperadj" ng-controller="ordercltr" ng-cloak>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title" id="exampleModalLabel">Select option</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" ng-cloak>
+                        1) <strong><a style="color:orangered;"
+                                href="https://api.whatsapp.com/send?phone=919971392910&text={{whatsapptext}}"><i
+                                    class="fab fa-whatsapp" style="color: green; font-size: 30px; padding: 10px;"></i>
+                                WhatsApp</a></strong>
+                        <br>
+                        <small><small>(No Calls only Message,We try to Resolve your Query as Soon as
+                                Possible)</small></small>
+                        <br>
+                        or
+                        <br>
+                        2) Email: <span style="color: black;"><strong><a href="mailto:users.inditrends@gmail.com"
+                                    style="color:orangered;">users.inditrends@gmail.com</a></strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-contentadj">
+            <div>
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <strong>Order Id</strong>
+                        <br> {{mainorderdta.orderId}} <br>
+                        <span class="green-col" ng-if="l.tracking != 'NA'"><a
+                                href="https://shiprocket.co/tracking/{{mainorderdta.tracking}}"
+                                style="color:rgb(86, 64, 185);">Track Your
+                                Order</a></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="orderstatusflow" ng-if="mainorderdta.paymentStatus=='232'">
+                            <div>
+                                <span class="red-col"> Payment Failed</span>
+                                <br>
+                                <span class="red-col">Any Amount got deducted will be refunded to your bank acc. within
+                                    24-48hrs.</span>
+                            </div>
+                        </div>
+                        <div class="orderstatusflow" ng-if="mainorderdta.paymentStatus=='323'">
+                            <div>
+                                <span style="color: rgb(183, 196, 8);"> Payment Pending</span>
+                                <br>
+                                <span class="green-col">Do not worry if you amount has been deducted from your bank
+                                    account then you order has received, it will be delivered soon.</span>
+                            </div>
+                        </div>
+                        <div class="orderstatusflow" ng-if="mainorderdta.status=='573'">
+                            <div>
+                                <span class="red-col"> Order cancelled</span>
+                                <br>
+                                <span class="red-col">Any Amount got deducted will be refunded to your bank acc. within
+                                    24-48hrs.</span>
+                            </div>
+                        </div>
+                        <!-- {{mainorderdta.status}} -->
+                        <div class="orderstatusflow" ng-if="mainorderdta.paymentStatus=='000'">
+                            <div>
+                                <span class="red-col"> Payment Not Complete</span>
+                                <br>
+                                <span class="red-col">You Initiated Payment but some how payment not completed, If any
+                                    Amount got deducted will be refunded to your bank acc. within
+                                    24-48hrs.</span>
+                            </div>
+                        </div>
+                        <div class="orderstatusflow"
+                            ng-if="mainorderdta.paymentStatus=='001' || mainorderdta.paymentStatus=='242'">
+                            <div class="contsiner">
+                                <ul class="StepProgress" ng-if="mainorderdta.status == '00'">
+                                    <li class="StepProgress-item is-done"><strong>Order Successfully Placed</strong>
+                                    </li>
+                                    <li class="StepProgress-item current"><strong>Order Processed</strong></li>
+                                    <li class="StepProgress-item"><strong>Order Shipped</strong></li>
+                                    <li class="StepProgress-item"><strong>Order Dispatched</strong></li>
+                                    <li class="StepProgress-item"><strong>Order Delivered</strong></li>
+                                </ul>
+                                <ul class="StepProgress" ng-if="mainorderdta.status == '05'">
+                                    <li class="StepProgress-item is-done"><strong>Order Successfully Placed</strong>
+                                    </li>
+                                    <li class="StepProgress-item is-done"><strong>Order Processed</strong></li>
+                                    <li class="StepProgress-item current"><strong>Order Shipped</strong></li>
+                                    <li class="StepProgress-item"><strong>Order Dispatched</strong></li>
+                                    <li class="StepProgress-item"><strong>Order Delivered</strong></li>
+                                </ul>
+                                <ul class="StepProgress" ng-if="mainorderdta.status == '10'">
+                                    <li class="StepProgress-item is-done"><strong>Order Successfully Placed</strong>
+                                    </li>
+                                    <li class="StepProgress-item is-done"><strong>Order Processed</strong></li>
+                                    <li class="StepProgress-item is-done"><strong>Order Shipped</strong></li>
+                                    <li class="StepProgress-item current"><strong>Order Dispatched</strong></li>
+                                    <li class="StepProgress-item"><strong>Order Delivered</strong></li>
+                                </ul>
+                                <ul class="StepProgress"
+                                    ng-if="mainorderdta.status == '15' || mainorderdta.status == '20'">
+                                    <li class="StepProgress-item is-done"><strong>Order Successfully Placed</strong>
+                                    </li>
+                                    <li class="StepProgress-item is-done"><strong>Order Processed</strong></li>
+                                    <li class="StepProgress-item is-done"><strong>Order Shipped</strong></li>
+                                    <li class="StepProgress-item is-done"><strong>Order Dispatched</strong></li>
+                                    <li class="StepProgress-item current"><strong>Order Delivered</strong></li>
+                                </ul>
+                                <ul class="StepProgress" ng-if="mainorderdta.status == '25'">
+                                    <li class="StepProgress-item is-done"><strong>Order Successfully Placed</strong>
+                                    </li>
+                                    <li class="StepProgress-item is-done"><strong>Order Processed</strong></li>
+                                    <li class="StepProgress-item is-done"><strong>Order Shipped</strong></li>
+                                    <li class="StepProgress-item is-done"><strong>Order Dispatched</strong></li>
+                                    <li class="StepProgress-item is-done"><strong>Order Delivered</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="orderdelivery" style="margin-top: 15px;">
+                            <div class="card">
+                                <div class="card-header border-warning bg-dark"><i class="fas fa-map-marked-alt"
+                                        style="color: rgba(252, 70, 107, 1);"></i> <strong
+                                        class=" white-col">Address</strong></div>
+                                <div class="card-body cartaddressbodyadj">
+                                    <div class="row">
+                                        <div class="col-md-8 col-sm-12">
+                                            <p class="card-title cartdeliveradj"><i class="fas fa-map-marker-alt"></i>
+                                                Deliver to
+                                                <strong>{{mainorderdta.address.aname}}</strong>
+                                                ({{mainorderdta.address.aphone}})
+                                            </p>
+                                            <p class="card-text">{{mainorderdta.address.cadd}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orderdetailsproduct">
+                            <div class="card-header border-primary bg-dark" style="margin-top: 15px;">
+                                <strong class=" white-col">Products</strong>
+                            </div>
+                            <div class="media orderborderredadj myorderstyle"
+                                ng-repeat="l in mainorderdta.products track by $index">
+                                <a href="/productpage?pid={{l.pid}}"><img src={{l.prdimg}}
+                                        class="align-self-center mr-3 orderimgadjshow" alt="{{l.name}}"></a>
+                                <div class="media-body">
+                                    <div class="myordercoltentshgk">
+                                        <h5 class="mt-0">{{l.name}}</h5>
+                                        <p><small><strong>Date :
+                                                    {{mainorderdta.date| date : format : shortDate}}</strong></small>
+                                        </p>
+                                        <span>Price : <strong>₹ {{l.prindexce| number}}/-</strong></span>
+                                        <br>
+                                        <span>Qty : {{l.qty}}</span>
+                                        <br>
+                                        <span>Size : {{l.size}}</span>
+                                        <br>
+                                        <span>Total : <strong>₹ {{l.prindexce| number}} X {{l.qty}} =
+                                                ₹ {{l.prindexce*l.qty| number}}/-</strong></span>
+                                    </div>
+                                    <div class="getrating">
+                                        <form class="rating"
+                                            ng-if="mainorderdta.status == '25'&& (mainorderdta.paymentStatus == '001' || mainorderdta.paymentStatus == '242')">
+                                            <label>
+                                                <input type="radio" ng-change="ratingchangeorddetails(l,1)"
+                                                    ng-model="ratval1" name="stars" value="1" />
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" ng-change="ratingchangeorddetails(l,2)"
+                                                    ng-model="ratval2" name="stars" value="2" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" ng-change="ratingchangeorddetails(l,3)"
+                                                    ng-model="ratval3" name="stars" value="3" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" ng-change="ratingchangeorddetails(l,4)"
+                                                    ng-model="ratval4" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" ng-change="ratingchangeorddetails(l,5)"
+                                                    ng-model="ratval5" name="stars" value="5" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orderoptionsaction">
+                            <div class="myorderaction">
+                                <button class="btn btn-danger"
+                                    ng-if="mainorderdta.status == '00' && (mainorderdta.paymentStatus == '001' || mainorderdta.paymentStatus == '242')"
+                                    ng-click="cancelorder(mainorderdta.orderId)">Cancel</button>
+                                <button class="btn btn-danger"
+                                    ng-if="mainorderdta.returnpossible && mainorderdta.status == '25' && (mainorderdta.paymentStatus == '001' || mainorderdta.paymentStatus == '242')"
+                                    ng-click="returnclick(mainorderdta.orderId)">Return</button>
+                                <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal"
+                                    ng-click="needhelp(mainorderdta.orderId)">Need
+                                    Help?</button>
+                                <p class="green-col"><small>{{cancelmsg}}</small></p>
+                            </div>
+                        </div>
+                        <div class="orderpricebreakout">
+                            <h5>Payment Mode :
+                                <span class="green-col" ng-if="mainorderdta.cashondelivery">Cash on
+                                    Delivery</span>
+                                <span class="green-col" ng-if="!mainorderdta.cashondelivery">Pre-Paid</span>
+                            </h5>
+                            <div class="card-header border-success bg-dark" style="margin-top: 15px;">
+                                <strong class=" white-col">Price Details</strong>
+                            </div>
+                            <div class="card-body">
+                                <div class="flex flex-hd">
+                                    <span>Price</span>
+                                    <span>₹ {{totalp|number:2}}</span>
+                                </div>
+                                <div class="flex flex-hd">
+                                    <span>Discount</span>
+                                    <span class="green-col">-₹ {{extrapri|number:2}}</span>
+                                </div>
+                                <div class="flex flex-hd">
+                                    <span>Delivery Charges</span>
+                                    <span class="green-col" ng-if="deliverycharges == 0">Free</span>
+                                    <span class="green-col" ng-if="deliverycharges != 0">₹ {{deliverycharges}}</span>
+                                </div>
+                                <div class="flex flex-hd" ng-if="coupoun">
+                                    <span><i class="fas fa-tag" style="color: #108215;"></i> Coupoun</span>
+                                    <span class="green-col">-₹ 599</span>
+                                </div>
+                                <div class="flex flex-hd bordertopbotm">
+                                    <span><strong>Total Amount</strong></span>
+                                    <span><strong>₹ {{mainorderdta.total|number}}/-</strong></span>
+                                </div>
+                                <p class="green-col">You Save ₹ {{extrapri|number:2}} on this Order.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-footeradj">
+        <div class="news-letter">
+            <div class="container">
+                <p>For Any Query Or Help : <a href="/contactUs" class="blama">Contact Us</a> via <i
+                        class="fab fa-whatsapp" style="color: green; font-size: 20px; padding: 10px;"></i> <a
+                        class="blama"
+                        href="https://api.whatsapp.com/send?phone=919971392910&text=Hey%2C%0Ainditrend.in%0APlease%20resolve%20my%20query%3F">WhatsApp</a>
+                    or <i class="fas fa-envelope"
+                        style="color: rgba(252, 70, 107, 1); font-size: 20px; padding: 10px;"></i> <a class="blama"
+                        href="mailto:users.inditrends@gmail.com">Email</a></p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer_top">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+                            <h6>MEN</h6>
+                            <ul class="f_nav">
+                                <!-- <li><a href="#">men</a></li> -->
+                                <li><a href="/categories?id=men-full-sleeves&sortby=1">Full Sleeves T-Shirts</a>
+                                </li>
+                                <li><a href="/categories?id=men-raglan-tshirts&sortby=1">Raglan T-Shirts</a></li>
+                                <li><a href="/categories?id=men-hoodies&sortby=1">Hoodies</a></li>
+                                <li><a href="/categories?id=men-sweatshirts&sortby=1">SweatShirts</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+                            <h6>WOMEN</h6>
+                            <ul class="f_nav">
+                                <!-- <li><a href="#">men</a></li> -->
+                                <li><a href="/categories?id=women-3-4-sleeves-tshirt&sortby=1">3/4<sup>th</sup>
+                                        Sleeves T-shirts</a></li>
+                                <li><a href="/categories?id=women-hoodies&sortby=1">Hoodies</a></li>
+                                <li><a href="/categories?id=cropped-hoodies&sortby=1">Crop Hoodies</a></li>
+                                <li><a href="/categories?id=women-sweatshirts&sortby=1">SweatShirts</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+                            <h6>User</h6>
+                            <ul class="f_nav">
+                                <li><a href="/userauth/register">Signup</a></li>
+                                <li><a href="/userauth/login">Login</a></li>
+                                <li><a href="/wishlist">wishlist</a></li>
+                                <li><a href="/viewcart">Cart</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+                            <h6>Legal</h6>
+                            <ul class="f_nav">
+                                <li><a href="/sitemap">Site Map</a></li>
+                                <li><a href="/termsofservices">Terms of Services</a></li>
+                                <li><a href="/privacypolicy">Privacy Policy</a></li>
+                                <li><a href="/contactUs">Contact Us</a></li>
+                                <li><a href="/shippingpolicy">Shipping Policy</a></li>
+                                <li><a href="/refundpolicy">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+                            <h6>Special Categories</h6>
+                            <ul class="f_nav">
+                                <!-- <li><a href="#">men</a></li> -->
+                                <li><a href="/categories?id=friends-merchandise&sortby=1">F.R.I.E.N.D.S</a>
+                                </li>
+                                <li><a href="/categories?id=game-of-thrones-merchandise&sortby=1">Game of
+                                        Thrones</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+                            <!-- <h4>Special Categories</h4> -->
+                            <br>
+                            <br>
+                            <ul class="f_nav">
+                                <!-- <li><a href="#">men</a></li> -->
+                                <li><a href="/"><i class="fas fa-undo-alt"></i> 7 Days Return Policy</a></li>
+                                <li><a href="/"><i class="fas fa-wallet"></i> Cash on Delivery</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+                            <h6>Connect with Us</h6>
+                            <ul class="f_nav">
+                                <!-- <li><a href="#">men</a></li> -->
+                                <li><a href="https://www.facebook.com/IndiTrendin"><i class="fab fa-facebook"></i>
+                                        Facebook</a></li>
+                                <li><a href="https://www.instagram.com/inditrend.in"><i
+                                            class="fab fa-instagram"></i> Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cards text-center">
+                        <p style="margin-right: 15px;margin-bottom: 10px;">100% Secure Payment</p>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-4">
+                                <img src="images/Razorpay.jpg" alt="Razorpay payment gateway"
+                                    style="width: 100%; " />
+                            </div>
+                            <div class="col-lg-9 col-sm-8">
+                                <img src="images/cards.jpg" alt="cards">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(':radio').change(function () {
+            console.log('New star rating: ' + this.value);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/jssidebar/jquery.backstretch.min.js"></script>
+    <script src="./assets/js/jssidebar/wow.min.js"></script>
+    <script src="./assets/js/jssidebar/waypoints.min.js"></script>
+    <script src="./assets/js/jssidebar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./assets/js/jssidebar/scripts.js"></script>
+</body>
+
+</html>

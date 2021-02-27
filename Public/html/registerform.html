@@ -1,0 +1,101 @@
+<div class="registration-form" ng-controller="registercltr">
+    <div class="container">
+        <h2 class="regh2adj">Registration</h2>
+        <div class="registration-grids">
+            <div class="reg-form">
+                <div class=" userregadj">
+                    <p>Welcome, Buy the Latest Fashion Trend @IndiTrend.</p>
+                    <p>Already Registered ? <a href="/userauth/login">Login here</a></p>
+                    <div class="googlediv">
+                        <p class="googleor"><strong>Sign in with</strong></p>
+                        <button class="btn btn-neutral btn-icon lgooogleadj" ng-click="loginwithgoogle()">
+                            <span class="btn-inner--icon"><img src="../images/google.jpg"
+                                    alt="google logo image"></span>
+                            <span class="btn-inner--text">Google</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="reg-right">
+                <div class="module-border-wrap">
+                    <form class="formreg module" name="phverf" novalidate>
+                        <p class="googleor"><strong>Or Enter Your Details here</strong></p>
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input type="text" class="form-control" id="Name" aria-describedby="emailHelp"
+                                placeholder="Enter Your Name Here" required ng-model="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Phone Number</label>
+                            <div class="row">
+                                <input type="text" placeholder="+91 -" class="form-control col-2" readonly>
+                                <input type="tel" class="form-control col-10" id="exampleInputPassword1" required
+                                    placeholder="Enter Your (10-Digit) Phone Number" pattern="^[0-9]{10}"
+                                    ng-model="registerphoneno">
+                            </div>
+                            <small id="emailHelp" class="form-text text-muted">{{phoneverifycheck}}</small>
+                        </div>
+                        <div class="form-group" ng-if="registerphoneno.length == 10">
+                            <button id="sendotpadj" class="btn btn-outline-success" ng-click="getopt(registerphoneno)">
+                                <div ng-if="!sendotpcicked">Send OTP</div>
+                                <div class="spinner-border" role="status" ng-if="sendotpcicked">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </button>
+                            <!-- <div class="loadergifregistersize">
+                                <img src="../images/loader.gif" alt="">
+                            </div> -->
+                        </div>
+                        <div class="form-group" ng-if="registerphoneno.length == 10">
+                            <label for="exampleInput1">OTP</label>
+                            <input type="tel" class="form-control" id="exampleInput1" required
+                                placeholder="Enter OTP Here" autocomplete="off">
+                            <small id="emailHelp2" class="form-text text-muted" style="color: red!important;"
+                                ng-if="sendotp">{{otpverify}}</small>
+                        </div>
+                        <div class="form-group" ng-if="registerphoneno.length == 10">
+                            <button id="verifyotpbtn" class="btn btn-outline-info"
+                                ng-click="verifyotp(registerphoneno)">
+                                <div ng-if="!verifyotpcicked">Verify OTP</div>
+                                <div class="spinner-border" role="status" ng-if="verifyotpcicked">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </button>
+                            <button id="resendbtn" class="btn btn-dark" disabled ng-click="getopt(registerphoneno)">
+                                Resend
+                            </button>
+                            <p style="display: inline-block;" id="time"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword13">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword13" required
+                                placeholder="Enter Password" name="pwd" ng-model="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword14">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword14" required
+                                placeholder="Enter Password" name="rpwd" ng-model="rpwd">
+                            <small id="emailHelp" class="form-text text-muted" style="color: red!important;"
+                                ng-if="phverf.pwd.$modelValue!=phverf.rpwd.$modelValue">Password Didn't match</small>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required
+                                ng-model="agree">
+                            <label class="form-check-label" for="exampleCheck1">Agree to <a href="/privacypolicy"
+                                    target="blank">Privacy Policy</a>
+                                and <a href="/termsofservices" target="blank"> terms & conditions</a>.</label>
+                        </div>
+                        <button id="registerbtnindi" type="submit" class="btn btn-info" ng-click="register(username,agree)">
+                            <div ng-if="!registercicked">Register</div>
+                            <div class="spinner-border" role="status" ng-if="registercicked">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </button>
+                        <span class="red-col">{{finalsubmit}}</span>
+                    </form>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script data-ad-client="ca-pub-4370747972986025" async
+		src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-181041124-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-181041124-1');
+	</script>
+
+	<title>IndiTrend | India's Trending Fashion Hub</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/titlelogo_icon.ico">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta property="og:title" content="IndiTrend | India's Trending Fashion Hub" />
+	<meta name="lang" content="en" />
+	<meta name="description"
+		content="New Look Every Day! Premium Quality T Shirts, SweatShirts, Hoodies at Affordable Prices for Men and Women. Start your Fashion Journey with our Newest Trend of IndiTrend Collection available only in India. COD Available| Easy Return Policy| Secure Payments" />
+	<meta property="og:type" content="product" />
+	<meta property="og:url" content="https://inditrend.in" />
+	<meta property="og:image" content="https://inditrend.in/images/titlelogo_icon.ico" />
+	<meta property="og:site_name" content="IndiTrend" />
+	<meta property="og:description"
+		content="New Look Every Day! Premium Quality T Shirts, SweatShirts, Hoodies at Affordable Prices for Men and Women. Start your Fashion Journey with our Newest Trend of IndiTrend Collection available only in India. COD Available| Easy Return Policy| Secure Payments" />
+	<meta name="keywords"
+		content="IndiTrend,inditrend,INDITREND,INDItrend,indiTrend,Indian,Indian trending products,Trending,Indi Trends, Indi Trend, India Trend,India Trending,T shirts,hoodies,sweatshirts,full sleeves t Shirts,T shirts men,men hoodies,men sweatshirts,men full sleeves t Shirts,women T shirts,women hoodies,women sweatshirts,women 3/4th sleeves t Shirts,cotton t shirts, pure cotton cloths, T shirts for men and women, print on demand, crop top for women, summer wear,summer cloths, winter wear,winter cloths, trending t shirts, newest t shirts, cotton t shirts, FRIENDS t shirt,FRIENDS hoodies,FRIENDS sweatshirt,FRIENDS crop top,Game of Threones t shirt,Game of Threones hoodies,Game of Threones sweatshirt,marvel t shirt,avengers t shirt, DC t shirts, cartoon t shirts, plain t shirts, plain hoodies, plain sweatshirts, plain crop top, tees">
+	<meta name="robots" content="index, follow">
+
+
+	<link rel="stylesheet" href="./assets/css/footer.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="./bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="./bower_components/owl.carousel/dist/assets/owl.theme.default.css" />
+	<link rel="stylesheet" href="./assets/css/fontawesome-free-5.14.0-web/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/csssidebar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="./assets/css/csssidebar/animate.css">
+	<link rel="stylesheet" href="./assets/css/csssidebar/style.css">
+	<link rel="stylesheet" href="./assets/css/csssidebar/media-queries.css">
+	<link rel="stylesheet" href="./assets/css/style-starter.css">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<link href="./assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!-- Custom Theme files -->
+	<script src="./assets/js/simpleCart.min.js"> </script>
+	<script src="./assets/js/main.js"></script>
+	<!-- cart -->
+	<link rel="stylesheet" href="./assets/css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<!-- OWL CAROUSEL -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+	<!------------------ Angular scripts--------- -->
+	<script src="./bower_components/angular/angular.min.js"></script>
+	<script src="./bower_components/angular-route/angular-route.min.js"></script>
+	<script src="./script/app.js"></script>
+	<script src="./script/models/productmodel.js"></script>
+	<script src="./script/models/headermodel.js"></script>
+	<script src="./script/controller/headercltr.js"></script>
+	<script src="./script/controller/productcltr.js"></script>
+	<script src="./script/utils/interceptorindi.js"></script>
+</head>
+
+<body ng-app="inditrends">
+	<div class="content-wrapperadj">
+		<!-- header-section-starts -->
+
+		<div class="content-headderadj" ng-controller="headercltr" ng-cloak>
+			<!-- Sidebar -->
+			<nav class="sidebar light">
+				<!-- close sidebar menu -->
+				<div class="dismiss">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div ng-if="!userlogin">
+					<div class="container logo-header123">
+						<img src="./images/titlelogo.png" alt="IndiTrend logo">
+						<h1 class="navsidewel"><strong>Welcome to IndiTrend</strong></h1>
+					</div>
+					<div class="container">
+						<div class="flex flex-hd">
+							<div>
+								<a class="btn btn-neutral" href="/userauth/login" role="button">Log In</a>
+							</div>
+							<div>
+								<a class="btn btn-neutral" href="/userauth/register" role="button">Register</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div ng-if="userlogin">
+					<div class="container logo-header123">
+						<a href="/userprofile">
+							<div class="profilepic">
+								<img src={{userdta.profilepic}} alt="IndiTrend user profile pic">
+							</div>
+						</a>
+						<h1 class="navsidewel"><strong>{{userdta.name}},</strong></h1>
+						<h1 class="navsidewel"><strong>Welcome to IndiTrend</strong></h1>
+					</div>
+					<div class="container">
+						<div class="flex">
+							<div>
+								<button class="btn btn-neutral" role="button" ng-click="logout()">Log Out</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<ul class="list-unstyled borderbottomhead">
+					<li>
+						<a href="/"><strong><i class="fas fa-store anchortagcol"></i> Home</strong></a>
+					</li>
+					<li>
+						<a data-target="#otherSections" data-toggle="collapse" aria-expanded="false"
+							class="dropdown-toggle" role="button" aria-controls="otherSections">
+							<strong><i class="fas fa-cloud-meatball" style="color: rgb(86, 64, 185);"></i> MEN</strong>
+						</a>
+						<ul class="collapse list-unstyled" id="otherSections">
+							<li>
+								<a class="bacnone1" href="/categories?id=men-full-sleeves&sortby=1">Full Sleeves
+									T-Shirts</a>
+							</li>
+							<li>
+								<a class="bacnone1" href="/categories?id=men-raglan-tshirts&sortby=1">Raglan
+									T-Shirts</a>
+							</li>
+							<li>
+								<a class="bacnone1" href="/categories?id=men-hoodies&sortby=1">Hoodies</a>
+							</li>
+							<li>
+								<a class="bacnone1" href="/categories?id=men-sweatshirts&sortby=1">SweatShirts</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a data-target="#otherSections1" data-toggle="collapse" aria-expanded="false"
+							class="dropdown-toggle" role="button" aria-controls="otherSections1">
+							<strong><i class="fas fa-female" style="color: palevioletred;"></i> WOMEN</strong>
+						</a>
+						<ul class="collapse list-unstyled" id="otherSections1">
+							<li>
+								<a class="bacnone"
+									href="/categories?id=women-3-4-sleeves-tshirt&sortby=1">3/4<sup>th</sup> Sleeves
+									T-shirts</a>
+							</li>
+							<li>
+								<a class="bacnone" href="/categories?id=women-hoodies&sortby=1">Hoodies</a>
+							</li>
+							<li>
+								<a class="bacnone" href="/categories?id=cropped-hoodies&sortby=1">Crop Hoodies</a>
+							</li>
+							<li>
+								<a class="bacnone" href="/categories?id=women-sweatshirts&sortby=1">SweatShirts</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a data-target="#otherSections2" data-toggle="collapse" aria-expanded="false"
+							class="dropdown-toggle" role="button" aria-controls="otherSections2">
+							<strong><i class="fas fa-award" style="color: #104436;"></i> Special Categories</strong>
+						</a>
+						<ul class="collapse list-unstyled" id="otherSections2">
+							<li>
+								<a class="bacnone2" href="/categories?id=friends-merchandise&sortby=1">F.R.I.E.N.D.S
+									<sup style="color: #DC0000;"><strong>NEW</strong></sup></a>
+							</li>
+							<li>
+								<a class="bacnone2" href="/categories?id=game-of-thrones-merchandise&sortby=1">Game of
+									Thrones <sup style="color: #DC0000;"><strong>NEW</strong></sup></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="" href="/categories?id=Trending&sortby=1"><strong><i
+									class="fas fa-chart-line red-col"></i>
+								Trending
+								Products</strong></a>
+					</li>
+					<li>
+						<a class="" href="/categories?id=Top&sortby=1">
+							<strong><i class="fas fa-sort-amount-up green-col"></i>Top
+								Products</strong>
+						</a>
+					</li>
+				</ul>
+				<ul class="list-unstyled borderbottomhead">
+					<li>
+						<a class="" href="/myorders"><strong><i class="fas fa-shopping-bag brownama"></i> My
+								Orders</strong></a>
+					</li>
+					<li>
+						<a class="" href="/viewcart"><strong><i class="fas fa-shopping-cart anchortagcol"></i> My
+								Cart</strong></a>
+					</li>
+					<li>
+						<a href="/wishlist"><strong><i class="fas fa-heart redama"></i> My
+								Wishlist</strong></a>
+					</li>
+					<li>
+						<a href="/userprofile"><strong><i class="fas fa-user anchortagcol"></i> My
+								Account</strong></a>
+					</li>
+				</ul>
+				<ul class="list-unstyled borderbottomhead">
+					<li>
+						<a href="/termsofservices"><strong><i class="fab fa-servicestack yellama"></i>Terms of
+								Service</strong></a>
+					</li>
+					<li>
+						<a href="/privacypolicy"><strong><i class="fas fa-cog blama"></i>Privacy Policy</strong></a>
+					</li>
+					<li>
+						<a href="/contactUs"><strong><i class="fas fa-address-card yellama"></i> Contact
+								Us</strong></a>
+					</li>
+					<li>
+						<a href="/shippingpolicy"><strong><i class="fas fa-file-contract blama"></i>
+								Shipping Policy</strong></a>
+					</li>
+					<li>
+						<a href="/refundpolicy"><strong><i class="fas fa-envelope yellama"></i>Refund
+								Policy</strong></a>
+					</li>
+				</ul>
+			</nav>
+			<!-- End sidebar -->
+			<!-- Dark overlay -->
+			<div class="overlay"></div>
+			<!-- header-section-ends -->
+			<div id="myHeadertopadj" class="banner-top">
+				<div>
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<div>
+							<form class="form-inline">
+								<button class="btn btn-m btn-neutral btn-neutral open-menu menu-btn-cust"
+									type="button"><i class="fas fa-bars"></i> <span
+										class="full-text">Menu</span></button>
+								<a class="navbar-brand nav-imga" href="/">
+									<img src="./images/logonew-removebg-preview.png"
+										class="d-inline-block align-top logocl" alt="INDITREND main logo">
+								</a>
+							</form>
+						</div>
+						<div class="cartbtn">
+							<span class="cartcounteradj"
+								ng-if="userdta.cart.product.length>0">{{userdta.cart.product.length}}</span>
+							<a class="btn" type="button" href="/viewcart"><i class="fas fa-shopping-cart"></i> Cart</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="container">
+			<p style="color: red;">Currently site is under production, so please do not make any payment.</p>
+		</div> -->
+		<div class="content-banneradj">
+			<div id="banner">
+				<div id="container-br">
+					<div id="IndiTrends" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#IndiTrends" data-slide-to="0" class="active"></li>
+							<li data-target="#IndiTrends" data-slide-to="1"></li>
+							<li data-target="#IndiTrends" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active bannercenter">
+								<a href="/categories?id=men-sweatshirts&sortby=1">
+									<img id="bannerimg1" src="./images/banner_winter.png" class="d-block bannerwidth"
+										alt="men's sweat shirts women hoodies womens crop hoodies">
+								</a>
+							</div>
+							<div class="carousel-item bannercenter">
+								<a href="/categories?id=friends-merchandise&sortby=1">
+									<img id="bannerimg2" src="./images/frnds.png" class="d-block bannerwidth"
+										alt="friends tshirts hoodies sweatshirts">
+								</a>
+							</div>
+							<div class="carousel-item bannercenter">
+								<a href="/categories?id=game-of-thrones-merchandise&sortby=1">
+									<img id="bannerimg3" src="./images/gotmrech.png" class="d-block bannerwidth"
+										alt="game of thrones hoodies tshirts sweatshirts">
+							</div>
+						</div>
+						<script>
+							var imgbn1 = document.getElementById("bannerimg1");
+							var imgbn2 = document.getElementById("bannerimg2");
+							var imgbn3 = document.getElementById("bannerimg3");
+							if (screen.width > 420) {
+								imgbn1.src = "./images/banner_winter-lg.png";
+								imgbn2.src = "./images/frnds-bg.png";
+								imgbn3.src = "./images/gotmrech-bg.png";
+							} else {
+								imgbn1.src = "./images/banner_winter.png";
+								imgbn2.src = "./images/frnds.png";
+								imgbn3.src = "./images/gotmrech.png";
+							}
+						</script>
+						<a class="carousel-control-prev" data-target="#IndiTrends" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" data-target="#IndiTrends" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- content-section-starts-here -->
+		<div class="content-contentadj" ng-controller="productcltr">
+			<div class="container">
+				<div id="myModal" class="modal" ng-cloak>
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
+				<div class="contentnotfy notificationmsg notfy" ng-cloak> {{notificationmsg}} </div>
+				<div class="main-content">
+					<div class="online-strip">
+						<h3>Follow Us :
+							<a href="https://www.facebook.com/IndiTrendin" class="facadj"><i
+									class="fab fa-facebook"></i> Facebook</a>
+							<a href="https://www.instagram.com/inditrend.in" class="insadj"><i
+									class="fab fa-instagram"></i> Instagram</a>
+						</h3>
+						<div class="clearfix"></div>
+					</div>
+					<!-------------------------------------------------PRODUCTS---------------------------------------------------------- -->
+					<div class="products-grid" ng-cloak>
+						<header>
+							<div class="flex flex-hd">
+								<div>
+									<h3 class="hny-title mb-0 text-center">TRENDING <span>TODAY</span></h3>
+									<p class="mb-4 text-center">Your Daily Dose Of Fashion</p>
+									<!-- <p class="headptag"></p> -->
+								</div>
+								<div>
+									<p class="viewall"><a href="/categories?id=Trending&sortby=1">View All</a></p>
+								</div>
+							</div>
+						</header>
+						<div class="loader-adj" ng-if="!trend_products && trend_err">
+							<img src="./images/loader.gif" alt="Trending product loader">
+						</div>
+						<div class="wrong-adj" ng-if="!trend_err">
+							<img src="./images/somethingwentwrong.gif" alt="something went wrong">
+							<p class="rd">Some Thing Went Wrong</p><button class="btn btn-danger"
+								ng-click="reloadtrends()">Reload</button>
+						</div>
+						<!-- <br>
+						<br> -->
+						<data-owl-carousel class="owl-carousel owl-theme">
+							<div owl-carousel-item="" class="item" ng-repeat="l in trend_products track by $index">
+								<div class="">
+									<a href="/productpage?pid={{l.prdid}}" class="prdimg-a-adj"><img
+											src="{{l.images[0]}}" alt="{{l.fullname}}"
+											class="prdimg-adj imgmaxheight"></a>
+									<button class="wishlist-btn" ng-if="wishlisthrt.indexOf(l.prdid) == -1"><i
+											class="far fa-heart" ng-click="addprdtowishlis(l.prdid)"></i></button>
+									<button class="wishlist-btn" ng-if="wishlisthrt.indexOf(l.prdid) > -1"><i
+											class="fas fa-heart" ng-click="removeprdtowishlis(l.prdid)"></i></button>
+									<div class="sale" ng-if="l.salestat"><img src="./images/sale.png"
+											alt="{{l.fullname}} sale"></div>
+									<div class="outstockadj" ng-if="!l.stocks"><img src="./images/outstock.png"
+											alt="{{l.fullname}} out of stock">
+									</div>
+									<a class="product_name prd-name"
+										href="/productpage?pid={{l.prdid}}"><strong>{{l.name}}</strong></a>
+									<p>
+									<div class="flex sp-btw-flx">
+										<div class="flex">
+											<div><span class="item_price priceit"><strong alt="price">₹
+														{{l.total}}</strong></span>
+											</div>
+											<div><strike class="str-clss" ng-if="!l.salestat">
+													{{((l.total)*(100))/(100-l.extraprice) | number:0}}
+												</strike>
+												<strike class="str-clss" ng-if="l.salestat">
+													{{((l.total--l.sale_price)*100)/(100-l.extraprice) | number:0}}
+												</strike>
+											</div>
+										</div>
+										<div>
+											<span>
+												<strong class="peroff" ng-if="!l.salestat">{{l.extraprice}}%
+													off</strong>
+											</span>
+											<span>
+												<strong class="peroff" ng-if="l.salestat">
+													{{((((l.total--l.sale_price)*100)/(100-l.extraprice)-l.total)*100)/(((l.total--l.sale_price)*100)/(100-l.extraprice))|number:0}}%
+													off</strong>
+											</span>
+										</div>
+									</div>
+									</p>
+									<p class="freeship">Free shipping by IndiTrend</p>
+								</div>
+							</div>
+							<div owl-carousel-item="" class="item">
+								<div>
+									<script async
+										src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+									<ins class="adsbygoogle" style="display:inline-block;width:145px;height:350px"
+										data-ad-client="ca-pub-4370747972986025" data-ad-slot="9885743086"></ins>
+									<script>
+										(adsbygoogle = window.adsbygoogle || []).push({});
+									</script>
+								</div>
+							</div>
+						</data-owl-carousel>
+						<div class="clearfix"></div>
+					</div>
+					<div ng-cloak>
+						<!-- </section> -->
+						<!-- //w3l-banner-slider-main -->
+						<section class="w3l-grids-hny-2">
+							<!-- /content-6-section -->
+							<div class="grids-hny-2-mian py-5">
+								<div class="container py-lg-5">
+
+									<h3 class="hny-title mb-0 text-center">Shop With <span class="color1">Us</span></h3>
+									<p class="mb-4 text-center">Handpicked Favourites just for you</p>
+									<div class="welcome-grids row mt-5">
+										<div class="col-lg-2 col-md-4 col-4 welcome-image">
+											<div class="boxhny13">
+												<a href="/categories?id=men-full-sleeves&sortby=1">
+													<img src="assets/images/full123.png" class="img-fluid"
+														alt="Men Full Sleeves T shirts | Trending Full sleeves t shirts for men only at inditrend" />
+													<div class="boxhny-content">
+														<h3 class="title">View
+													</div>
+												</a>
+											</div>
+											<h5 class="catfontsize">
+												<a href="/categories?id=men-full-sleeves&sortby=1">
+													<span style="font-size: large;">Men's</span> <br>
+													<span class="fonttextasd">Full Sleeves</span>
+												</a>
+											</h5>
+										</div>
+										<div class="col-lg-2 col-md-4 col-4 welcome-image">
+											<div class="boxhny13">
+												<a href="/categories?id=men-hoodies&sortby=1">
+													<img src="assets/images/hoodie.png" class="img-fluid"
+														alt="Men Hoodies | Latest Hoodies for men at affordable price" />
+													<div class="boxhny-content">
+														<h3 class="title">View</h3>
+													</div>
+												</a>
+											</div>
+											<h5 class="catfontsize">
+												<a href="/categories?id=men-hoodies&sortby=1">
+													<span style="font-size: large;">Men's</span> <br>
+													<span class="fonttextasd">Hoodies</span>
+												</a>
+											</h5>
+										</div>
+										<div class="col-lg-2 col-md-4 col-4 welcome-image">
+											<div class="boxhny13">
+												<a href="/categories?id=men-sweatshirts&sortby=1">
+													<img src="assets/images/sweat.png" class="img-fluid"
+														alt="Men SweatShirts | All new designs sweatshirts for men " />
+													<div class="boxhny-content">
+														<h3 class="title">View</h3>
+													</div>
+												</a>
+											</div>
+											<h5 class="catfontsize">
+												<a href="/categories?id=men-sweatshirts&sortby=1">
+													<span style="font-size: large;">Men's</span> <br>
+													<span class="fonttextasd">SweatShirt</span>
+												</a>
+											</h5>
+										</div>
+										<div class="col-lg-2 col-md-4 col-4 welcome-image">
+											<div class="boxhny13">
+												<a href="/categories?id=women-3-4-sleeves-tshirt&sortby=1">
+													<img src="assets/images/34 seleve.png" class="img-fluid"
+														alt="Women 3/4th Sleeves T shirts" />
+													<div class="boxhny-content">
+														<h3 class="title">View</h3>
+													</div>
+												</a>
+											</div>
+											<h5 class="catfontsize">
+												<a href="/categories?id=women-3-4-sleeves-tshirt&sortby=1">
+													<span style="font-size: large;">Women's</span> <br>
+													<span class="fonttextasd">3/4<sup>th</sup>Sleeves</span>
+												</a>
+											</h5>
+										</div>
+										<div class="col-lg-2 col-md-4 col-4 welcome-image">
+											<div class="boxhny13">
+												<a href="/categories?id=women-hoodies&sortby=1">
+													<img src="assets/images/hoodiew.png" class="img-fluid"
+														alt="Trending Hoodies for women at affordable price in India" />
+													<div class="boxhny-content">
+														<h3 class="title">View</h3>
+													</div>
+												</a>
+											</div>
+											<h5 class="catfontsize">
+												<a href="/categories?id=women-hoodies&sortby=1">
+													<span style="font-size: large;">Women's</span> <br>
+													<span class="fonttextasd">Hoodies</span>
+												</a>
+											</h5>
+										</div>
+										<div class="col-lg-2 col-md-4 col-4 welcome-image">
+											<div class="boxhny13">
+												<a href="/categories?id=cropped-hoodies&sortby=1">
+													<img src="assets/images/crophoodie1.png" class="img-fluid"
+														alt="Hot looking crop top for women / girls" />
+													<div class="boxhny-content">
+														<h3 class="title">View</h3>
+													</div>
+												</a>
+											</div>
+											<h5 class="catfontsize">
+												<a href="/categories?id=cropped-hoodies&sortby=1">
+													<span style="font-size: large;">Women's</span> <br>
+													<span class="fonttextasd">Crop Hoodie</span>
+												</a>
+											</h5>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="products-grid" ng-cloak>
+						<header>
+							<div class="flex flex-hd">
+								<div>
+									<h3 class="hny-title mb-0 text-center">NEW <span class="color2">ARRIVALS</span></h3>
+									<p class="mb-4 text-center">Best Price Gaurenteed</p>
+								</div>
+								<div>
+									<p class="viewall"><a href="/categories?id=NewArrival&sortby=1">View All</a></p>
+								</div>
+							</div>
+						</header>
+						<div class="loader-adj" ng-if="!newarrival && newarr_err">
+							<img src="./images/loader.gif" alt="new arrivals loader">
+						</div>
+						<div class="wrong-adj" ng-if="!newarr_err">
+							<img src="./images/somethingwentwrong.gif" alt="something went wrong">
+							<p class="rd">Some Thing Went Wrong</p><button class="btn btn-danger"
+								ng-click="reloadnewarr()">Reload</button>
+						</div>
+						<!-- <br>
+						<br> -->
+						<data-owl-carousel class="owl-carousel owl-theme">
+							<div owl-carousel-item="" class="item" ng-repeat="l in newarrival track by $index">
+								<div class="">
+									<a href="/productpage?pid={{l.prdid}}" class="prdimg-a-adj">
+										<img src="{{l.images[0]}}" alt="{{l.fullname}}" class="prdimg-adj imgmaxheight">
+									</a>
+									<button class="wishlist-btn" ng-if="wishlisthrt.indexOf(l.prdid) == -1"><i
+											class="far fa-heart" ng-click="addprdtowishlis(l.prdid)"></i></button>
+									<button class="wishlist-btn" ng-if="wishlisthrt.indexOf(l.prdid) > -1"><i
+											class="fas fa-heart" ng-click="removeprdtowishlis(l.prdid)"></i></button>
+									<div class="sale" ng-if="l.salestat"><img src="./images/sale.png"
+											alt="{{l.fullname}} sale"></div>
+									<div class="outstockadj" ng-if="!l.stocks"><img src="./images/outstock.png"
+											alt="{{l.fullname}} out of stock">
+									</div>
+									<a class="product_name prd-name"
+										href="/productpage?pid={{l.prdid}}"><strong>{{l.name}}</strong></a>
+									<p>
+									<div class="flex sp-btw-flx">
+										<div class="flex">
+											<div><span class="item_price priceit"><strong alt="price">₹
+														{{l.total}}</strong></span>
+											</div>
+											<div><strike class="str-clss" ng-if="!l.salestat">
+													{{((l.total)*(100))/(100-l.extraprice) | number:0}}
+												</strike>
+												<strike class="str-clss" ng-if="l.salestat">
+													{{((l.total--l.sale_price)*100)/(100-l.extraprice) | number:0}}
+												</strike>
+											</div>
+										</div>
+										<div>
+											<span><strong class="peroff" ng-if="!l.salestat">{{l.extraprice}}%
+													off</strong></span>
+											<span><strong class="peroff" ng-if="l.salestat">
+													{{((((l.total--l.sale_price)*100)/(100-l.extraprice)-l.total)*100)/(((l.total--l.sale_price)*100)/(100-l.extraprice))|number:0}}%
+													off</strong></span>
+										</div>
+									</div>
+									</p>
+									<p class="freeship">Free shipping by IndiTrend</p>
+								</div>
+							</div>
+							<div owl-carousel-item="" class="item">
+								<div>
+									<script async
+										src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+									<!-- main-carousel-2 -->
+									<ins class="adsbygoogle" style="display:inline-block;width:145px;height:350px"
+										data-ad-client="ca-pub-4370747972986025" data-ad-slot="6719829162"></ins>
+									<script>
+										(adsbygoogle = window.adsbygoogle || []).push({});
+									</script>
+								</div>
+							</div>
+						</data-owl-carousel>
+						<div class="clearfix"></div>
+					</div>
+					<div ng-cloak>
+						<!-- </section> -->
+						<!-- //w3l-banner-slider-main -->
+						<section class="w3l-grids-hny-2">
+							<!-- /content-6-section -->
+							<div class="grids-hny-2-mian py-5">
+								<div class="container py-lg-5">
+
+									<h3 class="hny-title mb-0 text-center">LATEST <span>CATEGORIES</span></h3>
+									<p class="mb-4 text-center">Handpicked Favourites just for you</p>
+									<div class="welcome-grids row mt-5">
+										<div class="col-lg-3 col-md-6 col-6 welcome-image">
+											<a href="/categories?id=friends-merchandise&sortby=1"><img
+													src="assets/images/friends.png" class="img-fluid"
+													alt="FRIENDS Official merchandise Tshirts, Hoodies, Sweatshirts" /></a>
+											<h5 class="catfontsize">
+												<a href="/categories?id=friends-merchandise&sortby=1">
+													<span class="fonttextasd">F.R.I.E.N.D.S</span>
+												</a>
+											</h5>
+										</div>
+										<div class="col-lg-3 col-md-6 col-6 welcome-image">
+											<a href="/categories?id=game-of-thrones-merchandise&sortby=1"><img
+													src="assets/images/got.png" class="img-fluid"
+													alt="Game of Threones Official merchandise Tshirts, Hoodies, Sweatshirts" /></a>
+											<h5 class="catfontsize">
+												<a href="/categories?id=game-of-thrones-merchandise&sortby=1">
+													<span class="fonttextasd">Game of Thrones</span>
+												</a>
+											</h5>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="products-grid" ng-cloak>
+						<header>
+							<div class="flex flex-hd">
+								<div>
+									<h3 class="hny-title mb-0 text-center">TOP <span class="color1">PRODUCTS</span></h3>
+									<p class="mb-4 text-center">You Won't Get Enough Of These</p>
+									<!-- <p class="headptag headptag3">You Won't Get Enough Of These</p> -->
+								</div>
+								<div>
+									<p class="viewall"><a href="/categories?id=Top&sortby=1">View All</a></p>
+								</div>
+							</div>
+						</header>
+						<div class="loader-adj" ng-if="!top_products && top_err">
+							<img src="./images/loader.gif" alt="top product loader">
+						</div>
+						<div class="wrong-adj" ng-if="!top_err">
+							<img src="./images/somethingwentwrong.gif" alt="something went wrong">
+							<p class="rd">Some Thing Went Wrong</p><button class="btn btn-danger"
+								ng-click="reloadtop()">Reload</button>
+						</div>
+						<!-- <br>
+						<br> -->
+						<data-owl-carousel class="owl-carousel owl-theme">
+							<div owl-carousel-item="" class="item" ng-repeat="l in top_products track by $index">
+								<div class="">
+									<a href="/productpage?pid={{l.prdid}}" class="prdimg-a-adj">
+										<img src="{{l.images[0]}}" alt="{{l.fullname}}" class="prdimg-adj imgmaxheight">
+									</a>
+									<button class="wishlist-btn" ng-if="wishlisthrt.indexOf(l.prdid) == -1"><i
+											class="far fa-heart" ng-click="addprdtowishlis(l.prdid)"></i></button>
+									<button class="wishlist-btn" ng-if="wishlisthrt.indexOf(l.prdid) > -1"><i
+											class="fas fa-heart" ng-click="removeprdtowishlis(l.prdid)"></i></button>
+									<div class="sale" ng-if="l.salestat"><img src="./images/sale.png"
+											alt="{{l.fullname}} sale"></div>
+									<div class="outstockadj" ng-if="!l.stocks"><img src="./images/outstock.png"
+											alt="{{l.fullname}} out of stock">
+									</div>
+									<a class="product_name prd-name"
+										href="/productpage?pid={{l.prdid}}"><strong>{{l.name}}</strong></a>
+									<p>
+									<div class="flex sp-btw-flx">
+										<div class="flex">
+											<div><span class="item_price priceit"><strong alt="price">₹
+														{{l.total}}</strong></span>
+											</div>
+											<div><strike class="str-clss" ng-if="!l.salestat">
+													{{((l.total)*(100))/(100-l.extraprice) | number:0}}
+												</strike>
+												<strike class="str-clss" ng-if="l.salestat">
+													{{((l.total--l.sale_price)*100)/(100-l.extraprice) | number:0}}
+												</strike>
+											</div>
+										</div>
+										<div>
+											<span><strong class="peroff" ng-if="!l.salestat">{{l.extraprice}}%
+													off</strong></span>
+											<span><strong class="peroff" ng-if="l.salestat">
+													{{((((l.total--l.sale_price)*100)/(100-l.extraprice)-l.total)*100)/(((l.total--l.sale_price)*100)/(100-l.extraprice))|number:0}}%
+													off</strong></span>
+										</div>
+									</div>
+									</p>
+									<p class="freeship">Free shipping by IndiTrend</p>
+								</div>
+							</div>
+							<div owl-carousel-item="" class="item">
+								<div>
+									<script async
+										src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+									<!-- main-carousel-2 -->
+									<ins class="adsbygoogle" style="display:inline-block;width:145px;height:350px"
+										data-ad-client="ca-pub-4370747972986025" data-ad-slot="6719829162"></ins>
+									<script>
+										(adsbygoogle = window.adsbygoogle || []).push({});
+									</script>
+								</div>
+							</div>
+						</data-owl-carousel>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- content-section-ends-here -->
+		<div class="content-footeradj">
+			<div class="news-letter">
+				<div class="container">
+					<p>For Any Query Or Help : <a href="/contactUs" class="blama">Contact Us</a> via <i
+							class="fab fa-whatsapp" style="color: green; font-size: 20px; padding: 10px;"></i> <a
+							class="blama"
+							href="https://api.whatsapp.com/send?phone=919971392910&text=Hey%2C%0Ainditrend.in%0APlease%20resolve%20my%20query%3F">WhatsApp</a>
+						or <i class="fas fa-envelope"
+							style="color: rgba(252, 70, 107, 1); font-size: 20px; padding: 10px;"></i> <a class="blama"
+							href="mailto:users.inditrends@gmail.com">Email</a></p>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="footer_top">
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>MEN</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/categories?id=men-full-sleeves&sortby=1">Full Sleeves T-Shirts</a>
+									</li>
+									<li><a href="/categories?id=men-raglan-tshirts&sortby=1">Raglan T-Shirts</a></li>
+									<li><a href="/categories?id=men-hoodies&sortby=1">Hoodies</a></li>
+									<li><a href="/categories?id=men-sweatshirts&sortby=1">SweatShirts</a></li>
+
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>WOMEN</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/categories?id=women-3-4-sleeves-tshirt&sortby=1">3/4<sup>th</sup>
+											Sleeves T-shirts</a></li>
+									<li><a href="/categories?id=women-hoodies&sortby=1">Hoodies</a></li>
+									<li><a href="/categories?id=cropped-hoodies&sortby=1">Crop Hoodies</a></li>
+									<li><a href="/categories?id=women-sweatshirts&sortby=1">SweatShirts</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>User</h6>
+								<ul class="f_nav">
+									<li><a href="/userauth/register">Signup</a></li>
+									<li><a href="/userauth/login">Login</a></li>
+									<li><a href="/wishlist">wishlist</a></li>
+									<li><a href="/viewcart">Cart</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>Legal</h6>
+								<ul class="f_nav">
+									<li><a href="/sitemap">Site Map</a></li>
+									<li><a href="/termsofservices">Terms of Services</a></li>
+									<li><a href="/privacypolicy">Privacy Policy</a></li>
+									<li><a href="/contactUs">Contact Us</a></li>
+									<li><a href="/shippingpolicy">Shipping Policy</a></li>
+									<li><a href="/refundpolicy">Refund Policy</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>Special Categories</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/categories?id=friends-merchandise&sortby=1">F.R.I.E.N.D.S</a>
+									</li>
+									<li><a href="/categories?id=game-of-thrones-merchandise&sortby=1">Game of
+											Thrones</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<!-- <h4>Special Categories</h4> -->
+								<br>
+								<br>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/"><i class="fas fa-undo-alt"></i> 7 Days Return Policy</a></li>
+									<li><a href="/"><i class="fas fa-wallet"></i> Cash on Delivery</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>Connect with Us</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="https://www.facebook.com/IndiTrendin"><i class="fab fa-facebook"></i>
+											Facebook</a></li>
+									<li><a href="https://www.instagram.com/inditrend.in"><i
+												class="fab fa-instagram"></i> Instagram</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="cards text-center">
+							<p style="margin-right: 15px;margin-bottom: 10px;">100% Secure Payment</p>
+							<div class="row">
+								<div class="col-lg-2 col-sm-4">
+									<img src="images/Razorpay.jpg" alt="Razorpay payment gateway"
+										style="width: 100%; " />
+								</div>
+								<div class="col-lg-9 col-sm-8">
+									<img src="images/cards.jpg" alt="cards">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+			setTimeout(function () {
+				$(".contentnotfy").fadeOut(0.1);
+			}, 0.1);
+		});
+	</script>
+	<script>
+		window.onscroll = function () { myFunction() };
+
+		var header = document.getElementById("myHeadertopadj");
+		var sticky = header.offsetTop + 150;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<script src="./assets/js/jssidebar/jquery.backstretch.min.js"></script>
+	<script src="./assets/js/jssidebar/wow.min.js"></script>
+	<script src="./assets/js/jssidebar/waypoints.min.js"></script>
+	<script src="./assets/js/jssidebar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./assets/js/jssidebar/scripts.js"></script>
+	<script>
+		document.cookie = "SameSite=None";
+		// alert(document.cookie);
+	</script>
+</body>
+
+</html>

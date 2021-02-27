@@ -1,0 +1,27 @@
+{
+  "name": "IndiTrends",
+  "authors": [
+    "Aadish Jain <aadishjain1946@gmail.com>"
+  ],
+  "description": "IndiTrends womens shopping website.",
+  "main": "index.html",
+  "keywords": [
+    "kurti",
+    "women",
+    "fashion"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.8.0",
+    "angular-route": "^1.8.0",
+    "owl.carousel": "^2.3.4"
+  }
+}

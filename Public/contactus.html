@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script data-ad-client="ca-pub-4370747972986025" async
+		src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-181041124-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-181041124-1');
+	</script>
+	<title>Contact Us | IndiTrend | India's Trending Fashion Hub</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/titlelogo_icon.ico">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta property="og:title" content="Contact Us | IndiTrend | India's Trending Fashion Hub" />
+	<meta name="lang" content="en" />
+	<meta name="description" content="Contact Us | IndiTrend" />
+	<meta property="og:type" content="product" />
+	<meta property="og:url" content="https://inditrend.in/contactUs" />
+	<meta property="og:image" content="https://inditrend.in/images/INDITRENDADJMAIN.png" />
+	<meta property="og:site_name" content="IndiTrend" />
+	<meta property="og:description" content="Contact Us | IndiTrend" />
+
+	<link rel="stylesheet" href="./assets/css/footer.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="./bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="./bower_components/owl.carousel/dist/assets/owl.theme.default.css" />
+	<link rel="stylesheet" href="./assets/css/fontawesome-free-5.14.0-web/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/csssidebar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="./assets/css/csssidebar/animate.css">
+	<link rel="stylesheet" href="./assets/css/csssidebar/style.css">
+	<link rel="stylesheet" href="./assets/css/csssidebar/media-queries.css">
+	<link rel="stylesheet" href="./assets/css/style-starter.css">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<link href="./assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!-- Custom Theme files -->
+	<script src="./assets/js/simpleCart.min.js"> </script>
+	<script src="./assets/js/main.js"></script>
+	<!-- cart -->
+	<link rel="stylesheet" href="./assets/css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./assets/css/main.css"><!-- OWL CAROUSEL -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+	<!------------------ Angular scripts--------- -->
+	<script src="./bower_components/angular/angular.min.js"></script>
+	<script src="./bower_components/angular-route/angular-route.min.js"></script>
+	<script src="./script/app.js"></script>
+	<script src="./script/models/headermodel.js"></script>
+	<script src="./script/controller/headercltr.js"></script>
+	<script src="./script/utils/interceptorindi.js"></script>
+</head>
+
+<body ng-app="inditrends">
+	<div class="content-wrapperadj">
+		<!-- header-section-starts -->
+
+		<div class="content-headderadj" ng-controller="headercltr" ng-cloak>
+			<!-- Sidebar -->
+			<nav class="sidebar light">
+				<!-- close sidebar menu -->
+				<div class="dismiss">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div ng-if="!userlogin">
+					<div class="container logo-header123">
+						<img src="./images/titlelogo.png" alt="IndiTrend logo">
+						<h1 class="navsidewel"><strong>Welcome to IndiTrend</strong></h1>
+					</div>
+					<div class="container">
+						<div class="flex flex-hd">
+							<div>
+								<a class="btn btn-neutral" href="/userauth/login" role="button">Log In</a>
+							</div>
+							<div>
+								<a class="btn btn-neutral" href="/userauth/register" role="button">Register</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div ng-if="userlogin">
+					<div class="container logo-header123">
+						<a href="/userprofile">
+							<div class="profilepic">
+								<img src={{userdta.profilepic}} alt="IndiTrend user profile pic">
+							</div>
+						</a>
+						<h1 class="navsidewel"><strong>{{userdta.name}},</strong></h1>
+						<h1 class="navsidewel"><strong>Welcome to IndiTrend</strong></h1>
+					</div>
+					<div class="container">
+						<div class="flex">
+							<div>
+								<button class="btn btn-neutral" role="button" ng-click="logout()">Log Out</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<ul class="list-unstyled borderbottomhead">
+					<li>
+						<a href="/"><strong><i class="fas fa-store anchortagcol"></i> Home</strong></a>
+					</li>
+					<li>
+						<a data-target="#otherSections" data-toggle="collapse" aria-expanded="false"
+							class="dropdown-toggle" role="button" aria-controls="otherSections">
+							<strong><i class="fas fa-cloud-meatball" style="color: rgb(86, 64, 185);"></i> MEN</strong>
+						</a>
+						<ul class="collapse list-unstyled" id="otherSections">
+							<li>
+								<a class="bacnone1" href="/categories?id=men-full-sleeves&sortby=1">Full Sleeves
+									T-Shirts</a>
+							</li>
+							<li>
+								<a class="bacnone1" href="/categories?id=men-raglan-tshirts&sortby=1">Raglan
+									T-Shirts</a>
+							</li>
+							<li>
+								<a class="bacnone1" href="/categories?id=men-hoodies&sortby=1">Hoodies</a>
+							</li>
+							<li>
+								<a class="bacnone1" href="/categories?id=men-sweatshirts&sortby=1">SweatShirts</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a data-target="#otherSections1" data-toggle="collapse" aria-expanded="false"
+							class="dropdown-toggle" role="button" aria-controls="otherSections1">
+							<strong><i class="fas fa-female" style="color: palevioletred;"></i> WOMEN</strong>
+						</a>
+						<ul class="collapse list-unstyled" id="otherSections1">
+							<li>
+								<a class="bacnone"
+									href="/categories?id=women-3-4-sleeves-tshirt&sortby=1">3/4<sup>th</sup> Sleeves
+									T-shirts</a>
+							</li>
+							<li>
+								<a class="bacnone" href="/categories?id=women-hoodies&sortby=1">Hoodies</a>
+							</li>
+							<li>
+								<a class="bacnone" href="/categories?id=cropped-hoodies&sortby=1">Crop Hoodies</a>
+							</li>
+							<li>
+								<a class="bacnone" href="/categories?id=women-sweatshirts&sortby=1">SweatShirts</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a data-target="#otherSections2" data-toggle="collapse" aria-expanded="false"
+							class="dropdown-toggle" role="button" aria-controls="otherSections2">
+							<strong><i class="fas fa-award" style="color: #104436;"></i> Special Categories</strong>
+						</a>
+						<ul class="collapse list-unstyled" id="otherSections2">
+							<li>
+								<a class="bacnone2" href="/categories?id=friends-merchandise&sortby=1">F.R.I.E.N.D.S
+									<sup style="color: #DC0000;"><strong>NEW</strong></sup></a>
+							</li>
+							<li>
+								<a class="bacnone2" href="/categories?id=game-of-thrones-merchandise&sortby=1">Game of
+									Thrones <sup style="color: #DC0000;"><strong>NEW</strong></sup></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="" href="/categories?id=Trending&sortby=1"><strong><i
+									class="fas fa-chart-line red-col"></i>
+								Trending
+								Products</strong></a>
+					</li>
+					<li>
+						<a class="" href="/categories?id=Top&sortby=1">
+							<strong><i class="fas fa-sort-amount-up green-col"></i>Top
+								Products</strong>
+						</a>
+					</li>
+				</ul>
+				<ul class="list-unstyled borderbottomhead">
+					<li>
+						<a class="" href="/myorders"><strong><i class="fas fa-shopping-bag brownama"></i> My
+								Orders</strong></a>
+					</li>
+					<li>
+						<a class="" href="/viewcart"><strong><i class="fas fa-shopping-cart anchortagcol"></i> My
+								Cart</strong></a>
+					</li>
+					<li>
+						<a href="/wishlist"><strong><i class="fas fa-heart redama"></i> My
+								Wishlist</strong></a>
+					</li>
+					<li>
+						<a href="/userprofile"><strong><i class="fas fa-user anchortagcol"></i> My
+								Account</strong></a>
+					</li>
+				</ul>
+				<ul class="list-unstyled borderbottomhead">
+					<li>
+						<a href="/termsofservices"><strong><i class="fab fa-servicestack yellama"></i>Terms of
+								Service</strong></a>
+					</li>
+					<li>
+						<a href="/privacypolicy"><strong><i class="fas fa-cog blama"></i>Privacy Policy</strong></a>
+					</li>
+					<li>
+						<a href="/contactUs"><strong><i class="fas fa-address-card yellama"></i> Contact
+								Us</strong></a>
+					</li>
+					<li>
+						<a href="/shippingpolicy"><strong><i class="fas fa-file-contract blama"></i>
+								Shipping Policy</strong></a>
+					</li>
+					<li>
+						<a href="/refundpolicy"><strong><i class="fas fa-envelope yellama"></i>Refund
+								Policy</strong></a>
+					</li>
+				</ul>
+			</nav>
+			<!-- End sidebar -->
+			<!-- Dark overlay -->
+			<div class="overlay"></div>
+			<!-- header-section-ends -->
+			<div id="myHeadertopadj" class="banner-top">
+				<div>
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<div>
+							<form class="form-inline">
+								<button class="btn btn-m btn-neutral btn-neutral open-menu menu-btn-cust"
+									type="button"><i class="fas fa-bars"></i> <span
+										class="full-text">Menu</span></button>
+								<a class="navbar-brand nav-imga" href="/">
+									<img src="./images/logonew-removebg-preview.png"
+										class="d-inline-block align-top logocl" alt="INDITREND main logo">
+								</a>
+							</form>
+						</div>
+						<div class="cartbtn">
+							<span class="cartcounteradj"
+								ng-if="userdta.cart.product.length>0">{{userdta.cart.product.length}}</span>
+							<a class="btn" type="button" href="/viewcart"><i class="fas fa-shopping-cart"></i> Cart</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- content-section-starts-here -->
+		<div class="content-contentadj contactusadj">
+			<div class="container" style="text-align: center;">
+				<h1 style="color: black; margin-top: 20px;">Contact us</h1>
+				<br><br>
+				<p style="text-align: left;">
+					We'd Love to Hear from YOU!
+					<br><br>
+					Our Team is always looking to hear from our customers. Whether you loved us or hated us let us hear
+					it.
+					<br>
+					<!-- Need Order Updates? Although our WhatsApp Elves and Email Canaries will be in touch right after you
+                    place an order, you can drop us a message below or Email us. -->
+					Any other questions, please leave your message directly in the WhatsApp or Email! Our office hours
+					are<br>
+					9am - 9pm - we respond to most emails within a business day, but if you don't get a response from
+					us, just wait for us to respond back and please check your spam bin!
+					<br><br>
+					Message Us : <strong><a
+							href="https://api.whatsapp.com/send?phone=919971392910&text=Hey%2C%0Ainditrend.in%0APlease%20resolve%20my%20query%3F"><i
+								class="fab fa-whatsapp" style="color: green; font-size: 30px; padding: 10px;"></i>
+							<span style="color:orangered;">WhatsApp</span></a></strong> <small><small>(No Calls only
+							Message,We try to Resolve your Query as
+							Soon as Possible)</small></small>
+					<br><br>
+					Email: <span style="color: black;"><strong><a href="mailto:users.inditrends@gmail.com"
+								style="color:orangered;">users.inditrends@gmail.com</a></strong></span>
+					<br>
+					<br>
+					Stay Awesome!
+					<br>
+					<br>
+					Love From Team <a href="/">INDITREND</a>
+				</p>
+
+			</div>
+		</div>
+		<!-- content-section-ends-here -->
+		<div class="content-footeradj">
+			<div class="news-letter">
+				<div class="container">
+					<p>For Any Query Or Help : <a href="/contactUs" class="blama">Contact Us</a> via <i
+							class="fab fa-whatsapp" style="color: green; font-size: 20px; padding: 10px;"></i> <a
+							class="blama"
+							href="https://api.whatsapp.com/send?phone=919971392910&text=Hey%2C%0Ainditrend.in%0APlease%20resolve%20my%20query%3F">WhatsApp</a>
+						or <i class="fas fa-envelope"
+							style="color: rgba(252, 70, 107, 1); font-size: 20px; padding: 10px;"></i> <a class="blama"
+							href="mailto:users.inditrends@gmail.com">Email</a></p>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="footer_top">
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>MEN</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/categories?id=men-full-sleeves&sortby=1">Full Sleeves T-Shirts</a>
+									</li>
+									<li><a href="/categories?id=men-raglan-tshirts&sortby=1">Raglan T-Shirts</a></li>
+									<li><a href="/categories?id=men-hoodies&sortby=1">Hoodies</a></li>
+									<li><a href="/categories?id=men-sweatshirts&sortby=1">SweatShirts</a></li>
+
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>WOMEN</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/categories?id=women-3-4-sleeves-tshirt&sortby=1">3/4<sup>th</sup>
+											Sleeves T-shirts</a></li>
+									<li><a href="/categories?id=women-hoodies&sortby=1">Hoodies</a></li>
+									<li><a href="/categories?id=cropped-hoodies&sortby=1">Crop Hoodies</a></li>
+									<li><a href="/categories?id=women-sweatshirts&sortby=1">SweatShirts</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>User</h6>
+								<ul class="f_nav">
+									<li><a href="/userauth/register">Signup</a></li>
+									<li><a href="/userauth/login">Login</a></li>
+									<li><a href="/wishlist">wishlist</a></li>
+									<li><a href="/viewcart">Cart</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>Legal</h6>
+								<ul class="f_nav">
+									<li><a href="/sitemap">Site Map</a></li>
+									<li><a href="/termsofservices">Terms of Services</a></li>
+									<li><a href="/privacypolicy">Privacy Policy</a></li>
+									<li><a href="/contactUs">Contact Us</a></li>
+									<li><a href="/shippingpolicy">Shipping Policy</a></li>
+									<li><a href="/refundpolicy">Refund Policy</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>Special Categories</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/categories?id=friends-merchandise&sortby=1">F.R.I.E.N.D.S</a>
+									</li>
+									<li><a href="/categories?id=game-of-thrones-merchandise&sortby=1">Game of
+											Thrones</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<!-- <h4>Special Categories</h4> -->
+								<br>
+								<br>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/"><i class="fas fa-undo-alt"></i> 7 Days Return Policy</a></li>
+									<li><a href="/"><i class="fas fa-wallet"></i> Cash on Delivery</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>Connect with Us</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="https://www.facebook.com/IndiTrendin"><i class="fab fa-facebook"></i>
+											Facebook</a></li>
+									<li><a href="https://www.instagram.com/inditrend.in"><i
+												class="fab fa-instagram"></i> Instagram</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="cards text-center">
+							<p style="margin-right: 15px;margin-bottom: 10px;">100% Secure Payment</p>
+							<div class="row">
+								<div class="col-lg-2 col-sm-4">
+									<img src="images/Razorpay.jpg" alt="Razorpay payment gateway"
+										style="width: 100%; " />
+								</div>
+								<div class="col-lg-9 col-sm-8">
+									<img src="images/cards.jpg" alt="cards">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<script src="./assets/js/jssidebar/jquery.backstretch.min.js"></script>
+	<script src="./assets/js/jssidebar/wow.min.js"></script>
+	<script src="./assets/js/jssidebar/waypoints.min.js"></script>
+	<script src="./assets/js/jssidebar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./assets/js/jssidebar/scripts.js"></script>
+</body>
+
+</html>

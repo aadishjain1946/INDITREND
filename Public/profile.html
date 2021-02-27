@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script data-ad-client="ca-pub-4370747972986025" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-181041124-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-181041124-1');
+    </script>
+    <title>User Profile | IndiTrend | India's Trending Fashion Hub</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/titlelogo_icon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="User Profile | IndiTrend | India's Trending Fashion Hub" />
+    <meta name="lang" content="en" />
+    <meta name="description"
+        content="Buy Trending Products from huge collection of Tshirst,hoodies,sweatshirts available at IndiTrend." />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="https://inditrend.in" />
+    <meta property="og:image" content="https://inditrend.in/images/INDITRENDADJMAIN.png" />
+    <meta property="og:site_name" content="IndiTrend" />
+    <meta property="og:description"
+        content="Buy Trending Products from huge collection of Tshirst,hoodies,sweatshirts available at IndiTrend." />
+    <meta name="keywords"
+        content="IndiTrend,inditrend,INDITREND,INDItrend,indiTrend,Indian,Indian trending products,Trending,Indi Trends, Indi Trend, India Trend,India Trending,T shirts,hoodies,sweatshirts,full sleeves t Shirts,T shirts men,men hoodies,men sweatshirts,men full sleeves t Shirts,women T shirts,women hoodies,women sweatshirts,women 3/4th sleeves t Shirts,cotton t shirts, pure cotton cloths, T shirts for men and women, print on demand, crop top for women, summer wear,summer cloths, winter wear,winter cloths, trending t shirts, newest t shirts, cotton t shirts, FRIENDS t shirt,FRIENDS hoodies,FRIENDS sweatshirt,FRIENDS crop top,Game of Threones t shirt,Game of Threones hoodies,Game of Threones sweatshirt,marvel t shirt,avengers t shirt, DC t shirts, cartoon t shirts, plain t shirts, plain hoodies, plain sweatshirts, plain crop top, tees">
+
+
+
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./bower_components/owl.carousel/dist/assets/owl.theme.default.css" />
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.14.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/animate.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/style.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/media-queries.css">
+    <link rel="stylesheet" href="./assets/css/style-starter.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Custom Theme files -->
+    <script src="./assets/js/simpleCart.min.js"> </script>
+    <script src="./assets/js/main.js"></script>
+    <!-- cart -->
+    <link rel="stylesheet" href="./assets/css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- OWL CAROUSEL -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <!------------------ Angular scripts--------- -->
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./script/app.js"></script>
+    <script src="./script/models/headermodel.js"></script>
+    <script src="./script/models/profilemodel.js"></script>
+    <script src="./script/controller/profilecltr.js"></script>
+    <script src="./script/controller/headercltr.js"></script>
+    <script src="./script/utils/interceptorindi.js"></script>
+</head>
+
+<body ng-app="inditrends">
+    <div class="content-wrapperadj">
+        <!-- header-section-starts -->
+
+        <div class="content-headderadj" ng-controller="headercltr" ng-cloak>
+			<!-- Sidebar -->
+			<nav class="sidebar light">
+				<!-- close sidebar menu -->
+				<div class="dismiss">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div ng-if="!userlogin">
+					<div class="container logo-header123">
+						<img src="./images/titlelogo.png" alt="IndiTrend logo">
+						<h1 class="navsidewel"><strong>Welcome to IndiTrend</strong></h1>
+					</div>
+					<div class="container">
+						<div class="flex flex-hd">
+							<div>
+								<a class="btn btn-neutral" href="/userauth/login" role="button">Log In</a>
+							</div>
+							<div>
+								<a class="btn btn-neutral" href="/userauth/register" role="button">Register</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div ng-if="userlogin">
+					<div class="container logo-header123">
+						<a href="/userprofile">
+							<div class="profilepic">
+								<img src={{userdta.profilepic}} alt="IndiTrend user profile pic">
+							</div>
+						</a>
+						<h1 class="navsidewel"><strong>{{userdta.name}},</strong></h1>
+						<h1 class="navsidewel"><strong>Welcome to IndiTrend</strong></h1>
+					</div>
+					<div class="container">
+						<div class="flex">
+							<div>
+								<button class="btn btn-neutral" role="button" ng-click="logout()">Log Out</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<ul class="list-unstyled borderbottomhead">
+					<li>
+						<a href="/"><strong><i class="fas fa-store anchortagcol"></i> Home</strong></a>
+					</li>
+					<li>
+						<a data-target="#otherSections" data-toggle="collapse" aria-expanded="false"
+							class="dropdown-toggle" role="button" aria-controls="otherSections">
+							<strong><i class="fas fa-cloud-meatball" style="color: rgb(86, 64, 185);"></i> MEN</strong>
+						</a>
+						<ul class="collapse list-unstyled" id="otherSections">
+							<li>
+								<a class="bacnone1" href="/categories?id=men-full-sleeves&sortby=1">Full Sleeves
+									T-Shirts</a>
+							</li>
+							<li>
+								<a class="bacnone1" href="/categories?id=men-raglan-tshirts&sortby=1">Raglan
+									T-Shirts</a>
+							</li>
+							<li>
+								<a class="bacnone1" href="/categories?id=men-hoodies&sortby=1">Hoodies</a>
+							</li>
+							<li>
+								<a class="bacnone1" href="/categories?id=men-sweatshirts&sortby=1">SweatShirts</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a data-target="#otherSections1" data-toggle="collapse" aria-expanded="false"
+							class="dropdown-toggle" role="button" aria-controls="otherSections1">
+							<strong><i class="fas fa-female" style="color: palevioletred;"></i> WOMEN</strong>
+						</a>
+						<ul class="collapse list-unstyled" id="otherSections1">
+							<li>
+								<a class="bacnone"
+									href="/categories?id=women-3-4-sleeves-tshirt&sortby=1">3/4<sup>th</sup> Sleeves
+									T-shirts</a>
+							</li>
+							<li>
+								<a class="bacnone" href="/categories?id=women-hoodies&sortby=1">Hoodies</a>
+							</li>
+							<li>
+								<a class="bacnone" href="/categories?id=cropped-hoodies&sortby=1">Crop Hoodies</a>
+							</li>
+							<li>
+								<a class="bacnone" href="/categories?id=women-sweatshirts&sortby=1">SweatShirts</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a data-target="#otherSections2" data-toggle="collapse" aria-expanded="false"
+							class="dropdown-toggle" role="button" aria-controls="otherSections2">
+							<strong><i class="fas fa-award" style="color: #104436;"></i> Special Categories</strong>
+						</a>
+						<ul class="collapse list-unstyled" id="otherSections2">
+							<li>
+								<a class="bacnone2" href="/categories?id=friends-merchandise&sortby=1">F.R.I.E.N.D.S
+									<sup style="color: #DC0000;"><strong>NEW</strong></sup></a>
+							</li>
+							<li>
+								<a class="bacnone2" href="/categories?id=game-of-thrones-merchandise&sortby=1">Game of
+									Thrones <sup style="color: #DC0000;"><strong>NEW</strong></sup></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="" href="/categories?id=Trending&sortby=1"><strong><i
+									class="fas fa-chart-line red-col"></i>
+								Trending
+								Products</strong></a>
+					</li>
+					<li>
+						<a class="" href="/categories?id=Top&sortby=1">
+							<strong><i class="fas fa-sort-amount-up green-col"></i>Top
+								Products</strong>
+						</a>
+					</li>
+				</ul>
+				<ul class="list-unstyled borderbottomhead">
+					<li>
+						<a class="" href="/myorders"><strong><i class="fas fa-shopping-bag brownama"></i> My
+								Orders</strong></a>
+					</li>
+					<li>
+						<a class="" href="/viewcart"><strong><i class="fas fa-shopping-cart anchortagcol"></i> My
+								Cart</strong></a>
+					</li>
+					<li>
+						<a href="/wishlist"><strong><i class="fas fa-heart redama"></i> My
+								Wishlist</strong></a>
+					</li>
+					<li>
+						<a href="/userprofile"><strong><i class="fas fa-user anchortagcol"></i> My
+								Account</strong></a>
+					</li>
+				</ul>
+				<ul class="list-unstyled borderbottomhead">
+					<li>
+						<a href="/termsofservices"><strong><i class="fab fa-servicestack yellama"></i>Terms of
+								Service</strong></a>
+					</li>
+					<li>
+						<a href="/privacypolicy"><strong><i class="fas fa-cog blama"></i>Privacy Policy</strong></a>
+					</li>
+					<li>
+						<a href="/contactUs"><strong><i class="fas fa-address-card yellama"></i> Contact
+								Us</strong></a>
+					</li>
+					<li>
+						<a href="/shippingpolicy"><strong><i class="fas fa-file-contract blama"></i>
+								Shipping Policy</strong></a>
+					</li>
+					<li>
+						<a href="/refundpolicy"><strong><i class="fas fa-envelope yellama"></i>Refund
+								Policy</strong></a>
+					</li>
+				</ul>
+			</nav>
+			<!-- End sidebar -->
+			<!-- Dark overlay -->
+			<div class="overlay"></div>
+			<!-- header-section-ends -->
+			<div id="myHeadertopadj" class="banner-top">
+				<div>
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<div>
+							<form class="form-inline">
+								<button class="btn btn-m btn-neutral btn-neutral open-menu menu-btn-cust"
+									type="button"><i class="fas fa-bars"></i> <span
+										class="full-text">Menu</span></button>
+								<a class="navbar-brand nav-imga" href="/">
+									<img src="./images/logonew-removebg-preview.png"
+										class="d-inline-block align-top logocl" alt="INDITREND main logo">
+								</a>
+							</form>
+						</div>
+						<div class="cartbtn">
+							<span class="cartcounteradj"
+								ng-if="userdta.cart.product.length>0">{{userdta.cart.product.length}}</span>
+							<a class="btn" type="button" href="/viewcart"><i class="fas fa-shopping-cart"></i> Cart</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+        <div class="content-contentadj wishlistback" ng-controller="profilecltr">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <div class="contentnotfy notificationmsg notfy" ng-cloak> {{notificationmsg}} </div>
+            <div class="emptywishlist" ng-if="!userlogin" ng-cloak>
+                <div class="emptywishlistimg">
+                    <img src="./images/emptygif.gif" alt="">
+                </div>
+                <div class="emptywishlistname">
+                    <h3>Log In to View Your Profile</h3>
+                </div>
+            </div>
+            <div class="profilecontainer" ng-if="userlogin" ng-cloak>
+                <div class="container">
+                    <div class="row flex-lg-nowrap">
+                        <div class="col-12 col-lg-auto mb-3" style="width: 200px;">
+                            <div class="card p-3">
+                                <div class="e-navlist e-navlist--active-bg">
+                                    <ul class="nav">
+                                        <li class="nav-item"><a class="nav-link px-2 active" href="/"><i
+                                                    class="fas fa-store"></i> Home</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link px-2" href="/myorders"><i
+                                                    class="fas fa-shopping-bag"></i> My
+                                                Orders</a></li>
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2" href="/viewcart">
+                                                <i class="fas fa-shopping-cart"></i> My
+                                                Cart
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2" href="/wishlist">
+                                                <i class="fas fa-heart"></i>
+                                                <span class="rounduserprof">{{userdta.wishlist.length}}</span> Wishlist
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="row">
+                                <div class="col mb-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="e-profile">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-auto mb-3">
+                                                        <div class="mx-auto" style="width: 140px;">
+                                                            <div class="d-flex justify-content-center align-items-center rounded"
+                                                                style="height: 140px">
+                                                                <div class="userprofilepicadj12345">
+                                                                    <img src={{userdta.profilepic}} alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
+                                                        <div class="text-center text-sm-left mb-2 mb-sm-0">
+                                                            <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap"
+                                                                style="color: black; font-family: 'Roboto', sans-serif;">
+                                                                <strong>{{userdta.name}}</strong></h4>
+                                                            <p class="mb-0" ng-if="userdta.phnumber">
+                                                                <small>#{{userdta.phnumber}}</small></p>
+                                                            <p class="mb-0" ng-if="!userdta.phnumber"><small><a
+                                                                        href="/userauth/phonenumberverify"
+                                                                        class="btn btn-neutral"><i
+                                                                            class="fas fa-phone"></i> Add Phone
+                                                                        Number</a></small></p>
+                                                            <p class="mb-0"><small>{{userdta.email}}</small></p>
+                                                            <div class="text-muted" ng-if="userdta.address.length > 0">
+                                                                <span
+                                                                    style="white-space: pre-line">{{userdta.address[userdta.defaultadd].hno}},
+                                                                    {{userdta.address[userdta.defaultadd].cadd}}
+                                                                    {{userdta.address[userdta.defaultadd].city}},{{userdta.address[userdta.defaultadd].state}}
+                                                                    {{userdta.address[userdta.defaultadd].pcode}}</span>
+                                                            </div>
+                                                            <!-- <div class="mt-2">
+                                                                <button class="btn btn-outline-info" type="button">
+                                                                    <i class="fas fa-edit"></i>
+                                                                    <span>Edit Profile</span>
+                                                                </button>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="text-center text-sm-right">
+                                                            <span class="badge badge-secondary">User</span>
+                                                            <div class="text-muted" ng-if="userdta.phnumber_verified">
+                                                                <small>Active</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"><a id="navoptions1" class="active nav-link">
+                                                            <p>Profile</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item"><a id="navoptions2" class="nav-link">
+                                                            <p>Address</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item"><a id="navoptions3" class="nav-link">
+                                                            <p>Password</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content pt-3">
+                                                    <div id="navfullexpand1" class="tab-pane active">
+                                                        <form class="form" name="porfileformadj">
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>Full Name</label>
+                                                                                <input class="form-control is-valid"
+                                                                                    type="text" name="name"
+                                                                                    placeholder="{{userdta.name}}"
+                                                                                    ng-model="porfileformadj.updatedname">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row" ng-if="!userdta.googleUser">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>Email</label>
+                                                                                <input id="updatedemail"
+                                                                                    class="form-control" type="email"
+                                                                                    ng-model="porfileformadj.updatedemail"
+                                                                                    placeholder="{{userdta.email}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col d-flex justify-content-end">
+                                                                    <span style="color: red;">{{nameemailmsg}}</span>
+                                                                    <button class="btn btn-info" type="submit"
+                                                                        ng-disabled="porfileformadj.$invalid"
+                                                                        ng-click="submitnameemail(porfileformadj.updatedname,porfileformadj.updatedemail)">Save
+                                                                        Changes</button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+
+                                                    </div>
+                                                    <div id="navfullexpand2" class="tab-pane ">
+                                                        <div ng-if="userdta.address.length == 0 && !addressform">
+                                                            <button class="btn btn-neutral" ng-click="add_address()"><i
+                                                                    class="fas fa-address-book"></i> Add
+                                                                Address</button>
+                                                        </div>
+                                                        <div ng-if="userdta.address.length > 0 && !addressform">
+                                                            <button class="btn btn-neutral" ng-click="add_address()"><i
+                                                                    class="fas fa-address-book"></i> Add
+                                                                Address</button>
+                                                        </div>
+                                                        <div ng-if="addressform">
+                                                            <button class="btn btn-neutral" ng-click="back()"><i
+                                                                    class="fas fa-arrow-left"></i></button>
+                                                        </div>
+                                                        <br>
+                                                        <form name="addrs" class="form" ng-if="addressform">
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>House No./Building Name*</label>
+                                                                                <input class="form-control" type="text"
+                                                                                    required ng-model="hno">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>Street/Area/Colony*</label>
+                                                                                <input class="form-control" type="text"
+                                                                                    required ng-model="cadd">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>City*</label>
+                                                                                <input class="form-control" type="text"
+                                                                                    required ng-model="city">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>State*</label>
+                                                                                <select id="stateselect"
+                                                                                    class="form-control" required>
+                                                                                    <option value="false" selected
+                                                                                        hidden>
+                                                                                        Select State
+                                                                                    </option>
+                                                                                    <option value="Andhra Pradesh">
+                                                                                        Andhra Pradesh</option>
+                                                                                    <option
+                                                                                        value="Andaman and Nicobar Islands">
+                                                                                        Andaman and Nicobar Islands
+                                                                                    </option>
+                                                                                    <option value="Arunachal Pradesh">
+                                                                                        Arunachal Pradesh</option>
+                                                                                    <option value="Assam">Assam</option>
+                                                                                    <option value="Bihar">Bihar</option>
+                                                                                    <option value="Chandigarh">
+                                                                                        Chandigarh</option>
+                                                                                    <option value="Chhattisgarh">
+                                                                                        Chhattisgarh</option>
+                                                                                    <option
+                                                                                        value="Dadar and Nagar Haveli">
+                                                                                        Dadar and Nagar Haveli</option>
+                                                                                    <option value="Daman and Diu">Daman
+                                                                                        and Diu</option>
+                                                                                    <option value="Delhi">Delhi</option>
+                                                                                    <option value="Lakshadweep">
+                                                                                        Lakshadweep</option>
+                                                                                    <option value="Puducherry">
+                                                                                        Puducherry</option>
+                                                                                    <option value="Goa">Goa</option>
+                                                                                    <option value="Gujarat">Gujarat
+                                                                                    </option>
+                                                                                    <option value="Haryana">Haryana
+                                                                                    </option>
+                                                                                    <option value="Himachal Pradesh">
+                                                                                        Himachal Pradesh</option>
+                                                                                    <option value="Jammu and Kashmir">
+                                                                                        Jammu and Kashmir</option>
+                                                                                    <option value="Jharkhand">Jharkhand
+                                                                                    </option>
+                                                                                    <option value="Karnataka">Karnataka
+                                                                                    </option>
+                                                                                    <option value="Kerala">Kerala
+                                                                                    </option>
+                                                                                    <option value="Madhya Pradesh">
+                                                                                        Madhya Pradesh</option>
+                                                                                    <option value="Maharashtra">
+                                                                                        Maharashtra</option>
+                                                                                    <option value="Manipur">Manipur
+                                                                                    </option>
+                                                                                    <option value="Meghalaya">Meghalaya
+                                                                                    </option>
+                                                                                    <option value="Mizoram">Mizoram
+                                                                                    </option>
+                                                                                    <option value="Nagaland">Nagaland
+                                                                                    </option>
+                                                                                    <option value="Odisha">Odisha
+                                                                                    </option>
+                                                                                    <option value="Punjab">Punjab
+                                                                                    </option>
+                                                                                    <option value="Rajasthan">Rajasthan
+                                                                                    </option>
+                                                                                    <option value="Sikkim">Sikkim
+                                                                                    </option>
+                                                                                    <option value="Tamil Nadu">Tamil
+                                                                                        Nadu</option>
+                                                                                    <option value="Telangana">Telangana
+                                                                                    </option>
+                                                                                    <option value="Tripura">Tripura
+                                                                                    </option>
+                                                                                    <option value="Uttar Pradesh">Uttar
+                                                                                        Pradesh</option>
+                                                                                    <option value="Uttarakhand">
+                                                                                        Uttarakhand</option>
+                                                                                    <option value="West Bengal">West
+                                                                                        Bengal</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>Pin Code*</label>
+                                                                                <input class="form-control"
+                                                                                    type="number" required
+                                                                                    ng-model="pcode">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>Landmark(optional)</label>
+                                                                                <input class="form-control" type="text"
+                                                                                    ng-model="lmark">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>Name*</label>
+                                                                                <input class="form-control" type="text"
+                                                                                    placeholder="Enter Name" required
+                                                                                    ng-model="aname">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>Phone Number*</label>
+                                                                                <input class="form-control" type="tel"
+                                                                                    placeholder="Enter Phone Number"
+                                                                                    required ng-model="aphone">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col d-flex justify-content-end">
+                                                                    <span class="red-col">{{formmsg}}</span>
+                                                                    <button class="btn btn-info" type="submit"
+                                                                        ng-if="!submitcheckadd"
+                                                                        ng-disabled="addrs.$invalid"
+                                                                        ng-click="addaddressuser(cadd, hno, city, pcode, lmark, aname, aphone)">Save
+                                                                        Changes</button>
+                                                                    <button class="btn btn-info" disabled
+                                                                        ng-if="submitcheckadd">
+                                                                        <div class="spinner-border" role="status">
+                                                                            <span class="sr-only">Loading...</span>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <div class="accordion" id="accordionExample"
+                                                            ng-if="userdta.address.length > 0 && !addressform">
+                                                            <div class="card"
+                                                                ng-repeat="l in userdta.address track by $index">
+                                                                <div class="card-header" id="{{$index}}">
+                                                                    <h2 class="mb-0" style="display: inline-block;">
+                                                                        <button class="btn btn-block text-left"
+                                                                            type="button" data-toggle="collapse"
+                                                                            data-target="#{{$index}}"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="{{$index}}">
+                                                                            <strong>{{l.aname}}</strong> <span
+                                                                                class="badge badge-secondary"
+                                                                                ng-if="userdta.defaultadd == $index">Default</span>
+                                                                        </button>
+                                                                    </h2>
+                                                                    <button class="editbuttonadj1234"
+                                                                        ng-click="editadd($index)"><i class="fas fa-pen"
+                                                                            style="color:  rgb(63, 94, 251);"></i></button>
+                                                                    <button class="editbuttonadj1234"
+                                                                        ng-click="deleteadd($index)"
+                                                                        ng-if="userdta.defaultadd != $index"><i
+                                                                            class="fas fa-trash"
+                                                                            style="color: rgba(252, 70, 107, 1);"></i></button>
+                                                                </div>
+
+                                                                <div id="{{$index}}" class="collapse show"
+                                                                    aria-labelledby="{{$index}}"
+                                                                    data-parent="#accordionExample">
+                                                                    <div class="card-body">
+                                                                        <div style="white-space: pre-line">
+                                                                            {{l.hno}},
+                                                                            {{l.cadd}}
+                                                                            {{l.city}},{{l.state}}
+                                                                            {{l.pcode}}
+                                                                            <div>
+                                                                                <p>{{l.aphone}}</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <button class="btn btn-neutral"
+                                                                            style="display: inline-block;"
+                                                                            ng-click="setasdefault($index)"
+                                                                            ng-if="userdta.defaultadd!=$index">Set as
+                                                                            Default</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div id="navfullexpand3" class="tab-pane ">
+                                                        <div class="changepwdheading">
+                                                            <p>Change Password</p>
+                                                        </div>
+                                                        <div ng-if="userdta.googleUser" style="margin-top: 15px;">
+                                                            <p>You cannot change password as you logged In with Google.
+                                                            </p>
+                                                        </div>
+                                                        <form class="form" name="pwdchange" ng-if="!userdta.googleUser">
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>Current Password</label>
+                                                                                <input id="cpwdadj" class="form-control"
+                                                                                    type="password" name="name"
+                                                                                    placeholder="Enter Current Password"
+                                                                                    required ng-model="cpwd" required
+                                                                                    autocomplete="off">
+                                                                                <span
+                                                                                    class="red-col">{{currpwdmsg}}</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>New Password</label>
+                                                                                <input id="newpwdadj"
+                                                                                    class="form-control" type="password"
+                                                                                    name="name"
+                                                                                    placeholder="Enter New Password"
+                                                                                    required ng-model="newpwd" required
+                                                                                    autocomplete="off">
+                                                                                <small id="emailHelp"
+                                                                                    class="form-text text-muted"
+                                                                                    ng-if="cpwd==newpwd && cpwd"
+                                                                                    style="color: red!important;">Current
+                                                                                    and New Password cannot be
+                                                                                    same. Enter different
+                                                                                    password.</small>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <label>Confirm Password</label>
+                                                                                <input id="newrepwdadj"
+                                                                                    class="form-control" type="password"
+                                                                                    name="name"
+                                                                                    placeholder="Enter Password Again"
+                                                                                    required ng-model="newreppwd"
+                                                                                    required autocomplete="off">
+                                                                                <small id="emailHelp"
+                                                                                    class="form-text text-muted"
+                                                                                    ng-if="newreppwd!=newpwd"
+                                                                                    style="color: red!important;">Password
+                                                                                    Didn't match</small>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col d-flex justify-content-end">
+                                                                    <button class="btn btn-info" type="submit"
+                                                                        ng-disabled="pwdchange.$invalid"
+                                                                        ng-click="changepassword(cpwd,newpwd)"
+                                                                        ng-if="!pwdloadcheck">Save
+                                                                        Changes</button>
+                                                                    <button class="btn btn-info" disabled
+                                                                        ng-if="pwdloadcheck">
+                                                                        <div class="spinner-border" role="status">
+                                                                            <span class="sr-only">Loading...</span>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("#navoptions1").click(function () {
+                                            $("#navfullexpand1").addClass("active");
+                                            $("#navfullexpand2").removeClass("active");
+                                            $("#navfullexpand3").removeClass("active");
+                                            $("#navoptions1").addClass("active");
+                                            $("#navoptions2").removeClass("active");
+                                            $("#navoptions3").removeClass("active");
+                                        });
+                                        $("#navoptions2").click(function () {
+                                            $("#navfullexpand2").addClass("active");
+                                            $("#navfullexpand1").removeClass("active");
+                                            $("#navfullexpand3").removeClass("active");
+                                            $("#navoptions2").addClass("active");
+                                            $("#navoptions1").removeClass("active");
+                                            $("#navoptions3").removeClass("active");
+                                        });
+                                        $("#navoptions3").click(function () {
+                                            $("#navfullexpand3").addClass("active");
+                                            $("#navfullexpand2").removeClass("active");
+                                            $("#navfullexpand1").removeClass("active");
+                                            $("#navoptions3").addClass("active");
+                                            $("#navoptions2").removeClass("active");
+                                            $("#navoptions1").removeClass("active");
+                                        });
+                                    });
+                                </script>
+
+                                <div class="col-12 col-md-3 mb-3">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="px-xl-3">
+                                                <button class="btn btn-block btn-dark" ng-click="logout()">
+                                                    <i class="fas fa-sign-out-alt"></i>
+                                                    <span>Logout</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title font-weight-bold">Support</h6>
+                                            <a href="/contactUs" type="button"
+                                                class="btn btn-outline-primary margadjbtn">Contact
+                                                Us</a>
+                                            <a href="/termsofservices" type="button"
+                                                class="btn btn-dark margadjbtn">Terms
+                                                of Services</a>
+                                            <a href="/privacypolicy" type="button"
+                                                class="btn btn-dark margadjbtn">Privacy
+                                                Policy</a>
+                                            <a href="/shippingpolicy" type="button"
+                                                class="btn btn-dark margadjbtn">Shipping
+                                                Policy</a>
+                                            <a href="/refundpolicy" type="button" class="btn btn-dark margadjbtn">Refund
+                                                Policy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content-section-ends-here -->
+        <div class="content-footeradj">
+			<div class="news-letter">
+				<div class="container">
+					<p>For Any Query Or Help : <a href="/contactUs" class="blama">Contact Us</a> via <i
+							class="fab fa-whatsapp" style="color: green; font-size: 20px; padding: 10px;"></i> <a
+							class="blama"
+							href="https://api.whatsapp.com/send?phone=919971392910&text=Hey%2C%0Ainditrend.in%0APlease%20resolve%20my%20query%3F">WhatsApp</a>
+						or <i class="fas fa-envelope"
+							style="color: rgba(252, 70, 107, 1); font-size: 20px; padding: 10px;"></i> <a class="blama"
+							href="mailto:users.inditrends@gmail.com">Email</a></p>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="footer_top">
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>MEN</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/categories?id=men-full-sleeves&sortby=1">Full Sleeves T-Shirts</a>
+									</li>
+									<li><a href="/categories?id=men-raglan-tshirts&sortby=1">Raglan T-Shirts</a></li>
+									<li><a href="/categories?id=men-hoodies&sortby=1">Hoodies</a></li>
+									<li><a href="/categories?id=men-sweatshirts&sortby=1">SweatShirts</a></li>
+
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>WOMEN</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/categories?id=women-3-4-sleeves-tshirt&sortby=1">3/4<sup>th</sup>
+											Sleeves T-shirts</a></li>
+									<li><a href="/categories?id=women-hoodies&sortby=1">Hoodies</a></li>
+									<li><a href="/categories?id=cropped-hoodies&sortby=1">Crop Hoodies</a></li>
+									<li><a href="/categories?id=women-sweatshirts&sortby=1">SweatShirts</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>User</h6>
+								<ul class="f_nav">
+									<li><a href="/userauth/register">Signup</a></li>
+									<li><a href="/userauth/login">Login</a></li>
+									<li><a href="/wishlist">wishlist</a></li>
+									<li><a href="/viewcart">Cart</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>Legal</h6>
+								<ul class="f_nav">
+									<li><a href="/sitemap">Site Map</a></li>
+									<li><a href="/termsofservices">Terms of Services</a></li>
+									<li><a href="/privacypolicy">Privacy Policy</a></li>
+									<li><a href="/contactUs">Contact Us</a></li>
+									<li><a href="/shippingpolicy">Shipping Policy</a></li>
+									<li><a href="/refundpolicy">Refund Policy</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>Special Categories</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/categories?id=friends-merchandise&sortby=1">F.R.I.E.N.D.S</a>
+									</li>
+									<li><a href="/categories?id=game-of-thrones-merchandise&sortby=1">Game of
+											Thrones</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<!-- <h4>Special Categories</h4> -->
+								<br>
+								<br>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="/"><i class="fas fa-undo-alt"></i> 7 Days Return Policy</a></li>
+									<li><a href="/"><i class="fas fa-wallet"></i> Cash on Delivery</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 span1_of_4 footerdivss">
+								<h6>Connect with Us</h6>
+								<ul class="f_nav">
+									<!-- <li><a href="#">men</a></li> -->
+									<li><a href="https://www.facebook.com/IndiTrendin"><i class="fab fa-facebook"></i>
+											Facebook</a></li>
+									<li><a href="https://www.instagram.com/inditrend.in"><i
+												class="fab fa-instagram"></i> Instagram</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="cards text-center">
+							<p style="margin-right: 15px;margin-bottom: 10px;">100% Secure Payment</p>
+							<div class="row">
+								<div class="col-lg-2 col-sm-4">
+									<img src="images/Razorpay.jpg" alt="Razorpay payment gateway"
+										style="width: 100%; " />
+								</div>
+								<div class="col-lg-9 col-sm-8">
+									<img src="images/cards.jpg" alt="cards">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <script>
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $(".contentnotfy").fadeOut(1);
+                }, 1);
+            });
+        </script>
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var header = document.getElementById("myHeadertopadj");
+            var sticky = header.offsetTop + 100;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+        <script src="./assets/js/jssidebar/jquery.backstretch.min.js"></script>
+        <script src="./assets/js/jssidebar/wow.min.js"></script>
+        <script src="./assets/js/jssidebar/waypoints.min.js"></script>
+        <script src="./assets/js/jssidebar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="./assets/js/jssidebar/scripts.js"></script>
+</body>
+
+</html>

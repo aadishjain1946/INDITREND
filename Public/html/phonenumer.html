@@ -1,0 +1,78 @@
+<div class="registration-form" ng-controller="phonenocltr">
+    <div class="container">
+        <h2 class="regh2adj">Verify you Phone Number</h2>
+        <div class="registration-grids">
+            <div class="reg-form">
+                <div class=" userregadj">
+                    <p>Welcome, Buy the Latest Fashion Trend @IndiTrend.</p>
+                    <p>Already Registered ? <a href="/userauth/login">Login here</a></p>
+                    <!-- <div class="googlediv">
+                        <button class="btn btn-outline-primary lgooogleadj" ng-click="loginwithgoogle()"><img
+                                src="../images/google.jpg" alt=""> Log in
+                            With Google</button>
+                    </div>
+                    <p class="googleor">or</p> -->
+                </div>
+            </div>
+            <div class="reg-right">
+                <div class="module-border-wrap">
+                    <form class="formreg module" name="phverf">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" disabled
+                                ng-model="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Phone Number</label>
+                            <div class="row">
+                                <input type="text" placeholder="+91 -" class="form-control col-2" readonly>
+                                <input type="tel" class="form-control col-10" id="exampleInputPassword1" required
+                                    placeholder="Enter Your (10-Digit) Phone Number" pattern="^[0-9]{10}"
+                                    ng-model="phonenumber">
+                            </div>
+                            <small id="emailHelp1" class="form-text text-muted">{{phoneverifymsg}}</small>
+                        </div>
+                        <div class="form-group" ng-if="phonenumber.length == 10 && otprequired">
+                            <button id="sendotpadj" class="btn btn-outline-success" ng-click="getopt(phonenumber)">
+                                <div ng-if="!sendotpcicked">Send OTP</div>
+                                <div class="spinner-border" role="status" ng-if="sendotpcicked">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </button>
+                            <small id="emailHelp2" class="form-text text-muted" style="color: green!important;"
+                                ng-if="sendotp">OTP Sent.Please
+                                turn off DND(Do Not Disturb) mode incase OTP not received. </small>
+                        </div>
+                        <div class="form-group" ng-if="phonenumber.length == 10 && otprequired">
+                            <label for="exampleInputPassword12">OTP</label>
+                            <input type="tel" class="form-control" id="exampleInputPassword12" required
+                                placeholder="Enter OTP Here" autocomplete="off" ng-model="otpvalue">
+                            <small id="emailHelp3" class="form-text text-muted">{{optstatusverify}}</small>
+                        </div>
+                        <div class="form-group" ng-if="phonenumber.length == 10 && otprequired">
+                            <button id="verifyotpbtn" class="btn btn-outline-info" ng-click="verifyotp(phonenumber)">
+                                <div ng-if="!verifyotpcicked">Verify OTP</div>
+                                <div class="spinner-border" role="status" ng-if="verifyotpcicked">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </button>
+                            <button id="resendbtn" class="btn btn-dark" disabled
+                                ng-click="getopt(phonenumber)">Resend</button>
+                            <p style="display: inline-block;" id="time"></p>
+                        </div>
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required
+                                ng-model="agree">
+                            <label class="form-check-label" for="exampleCheck1">Agree to <a href="/privacypolicy">Privacy Policy</a>
+                                and <a href="/termsofservices"> terms & conditions</a>.</label>
+                        </div>
+                        <button type="submit" class="btn btn-info" ng-click="register(agree)">Register</button>
+                        <span class="red-col">{{finalsubmit}}</span>
+                    </form>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://inditrend.in/</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/userauth/login</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/userauth/register</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/userprofile</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=men-full-sleeves&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=men-raglan-tshirts&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=men-hoodies&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=men-sweatshirts&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=women-3-4-sleeves-tshirt&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=women-hoodies&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=cropped-hoodies&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=women-sweatshirts&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=friends-merchandise&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=game-of-thrones-merchandise&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=Trending&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=Top&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/myorders</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/viewcart</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/wishlist</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/termsofservices</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/privacypolicy</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/contactUs</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/shippingpolicy</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/refundpolicy</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/productpage?pid={{l.prdid}}</loc>
+  <lastmod>2020-12-21T10:58:55+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id=NewArrival&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/sitemap</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/userauth/phonenumberverify</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id={{l}}&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/orderdetails?orderId={{l.orderId}}</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/productpage?pid={{productdetails.prdid}}</loc>
+  <lastmod>2020-12-21T10:58:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/categories?id={{selectedcateg}}&amp;sortby=1</loc>
+  <lastmod>2020-12-21T10:50:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inditrend.in/productpage?pid={{l.pid}}</loc>
+  <lastmod>2020-12-21T10:58:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

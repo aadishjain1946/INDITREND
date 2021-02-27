@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Google-OAuth-IndiTrend | India's Trending Fashion Hub</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/titlelogo_icon.ico">
+
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+    <script src="../script/app/userapp.js"></script>
+    <script src="../script/models/googleauthmodel.js"></script>
+    <script src="../script/controller/googleauthcltr.js"></script>
+    <script src="../script/utils/interceptor.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body ng-app="inditrends_user">
+    <div ng-controller="verifygooglecltr" class="googlecltrmain flex flex-sp-ard">
+        <div class="loadinggoogleauth">
+            <img src="../images/loadinggif.gif" alt="loading" style="width: 100%;">
+            <h1>Hold On , Getting Things Ready For You.</h1>
+        </div>
+    </div>
+</body>
+
+</html>

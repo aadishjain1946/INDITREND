@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order Placed Successfully | IndiTrend | India's Trending Fashion Hub</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/titlelogo_icon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="Order Placed Successfully | IndiTrend | India's Trending Fashion Hub" />
+    <meta name="lang" content="en" />
+    <meta name="description"
+        content="Trending Women kurtas, kurtis available online at best price in India.Huge range of designer kurtis,kurti & palazzo,kurti & Sharara and many more only @IndiTrend.⭐Best quality guaranteed.⭐ Easy return and refund.⭐ Fastest Delivery." />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="https://inditrend.in" />
+    <meta property="og:image" content="https://inditrend.in/images/titlelogo_icon.ico" />
+    <meta property="og:site_name" content="IndiTrend" />
+    <meta property="og:description"
+        content="Trending Women kurtas, kurtis available online at best price in India.Huge range of designer kurtis,kurti & palazzo,kurti & Sharara and many more only @IndiTrend.⭐Best quality guaranteed.⭐ Easy return and refund.⭐ Fastest Delivery." />
+    <meta name="keywords"
+        content="Indian,Indian trending products,Trending,Indi Trends, Indi Trend, India Trend,India Trending,Indian women fashion,Indian,Indian Fashion Hub,Fashion, Indian Fashion, Kurti fashion,Long Kurti, Kurti palazzo, kurti,palazzo,kurti palazzo dupatta,designer kurti,kurti designs,kurtis neck design,kurta for women,latest kurti designs,new designer kurtis,kurtis online,ladies kurti,girls kurti,cotton kurtis,kurti patterns,long kurti design,stylish kurtis,fancy kurti,designer kurtis for girls,ladies kurta,saree,kurta,kurti palazzo,kurti pant,kurti sharara,sharara,pant,palazzo,skirt,kurti skirt,cotton kurti,rayon kurti,fashion for women, women fashion, trending fashion, trending Indian fashion,latest fashion trend,apparel,women clothing, clothing,Inding clothing store, budget shopping , never seen before deal sale, clothing sale, women fashion sale,sale, women,fashion,trending,cloth,clothing,latest,style,latest kurti design for women,long kurti for women,cotton kurti for women,rayon kurti for women,kurti sharara set for women,kurti palazzo set for women,latest designer kurti,latest designer styles for women">
+
+
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/csssidebar/style.css">
+    <link rel="stylesheet" href="./assets/css/csssidebar/media-queries.css">
+    <link rel="stylesheet" href="./assets/css/style-starter.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <link rel="stylesheet" href="./assets/css/status.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Custom Theme files -->
+    <script src="./assets/js/simpleCart.min.js"> </script>
+    <script src="./assets/js/main.js"></script>
+    <!-- cart -->
+    <link rel="stylesheet" href="./assets/css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Favicon and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="stylesheet" href="./assets/css/borderanim.css">
+    <!------------------ Angular scripts--------- -->
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./script/app.js"></script>
+    <script src="./script/models/verifypaymentstatusmodel.js"></script>
+    <script src="./script/controller/verifypaymentstatuscltr.js"></script>
+    <script src="./script/utils/interceptorindi.js"></script>
+</head>
+
+<body class="box" ng-app="inditrends">
+    <div class="container" ng-controller="verifystatcltr" ng-cloak>
+        <div class="content">
+            <div class="trans-success">
+                <div class="trans-success-head">
+                    <img src="./images/transsuccess.gif" alt="transction_SUCCESS">
+                </div>
+                <div class="trans-success-content">
+                    <h1 class="green-col">Order Successfull!</h1>
+                    <p><small>{{orderdata.date| date : format : shortDate}}</small></p>
+                    <p>Thank You for placing your order. You will receive an confirmation message on your registered
+                        mobile number shortly. Till then View today's <a href="/categories?id=Trending&sortby=1"
+                            style="color: cornflowerblue;">Trending</a> Products.</p>
+                    <br>
+                    <p class="trackorder"><a href="/myorders">Track Order</a></p>
+                    <p class="trackorder1"><a href="/">Continue Shopping</a></p>
+                </div>
+            </div>
+            <div id="footer" class="cartfootermarg">
+                <div class="container">
+                    <div class="row cartfootertext">
+                        <a class="col-lg-3 col-md-6 col-sm-6 cartalinksty" href="/termsofservices">
+                            <h6>Terms of Services</h6>
+                        </a>
+                        <a class="col-lg-3 col-md-6 col-sm-6 cartalinksty" href="/contactUs">
+                            <h6>Contact Us</h6>
+                        </a>
+                        <a class="col-lg-3 col-md-6 col-sm-6 cartalinksty" href="/refundpolicy">
+                            <h6>Return Policy</h6>
+                        </a>
+                        <a class="col-lg-3 col-md-6 col-sm-6 cartalinksty" href="/privacypolicy">
+                            <h6>Privacy Policy</h6>
+                        </a>
+                        <a class="col-lg-3 col-md-6 col-sm-6 cartalinksty" href="/shippingpolicy">
+                            <h6>Shipping Policy</h6>
+                        </a>
+                        <p><a href="/">@IndiTrend</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

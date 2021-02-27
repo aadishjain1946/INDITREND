@@ -1,0 +1,10 @@
+const mongoose = require('mongoose');
+const path = require('path');
+require('dotenv').config();
+var key = String(process.env.MONGODB_CNT);
+mongoose.connect(key, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
+mongoose.set('useUnifiedTopology', true);
+module.exports = mongoose;
