@@ -36,7 +36,7 @@
 
 **6) Order Summary**
 
-![alt text](https://drive.google.com/thumbnail?id=1b0KY58RyBQk9iEbwm1ySmT4qE3ldu9q&sz=w1426-h941)
+![alt text](https://drive.google.com/thumbnail?id=1b0KY58RyBQk9iEbwm1ySmT4qE3ldu9q-&sz=w1426-h941)
 
 
 **7) Payment Page**
