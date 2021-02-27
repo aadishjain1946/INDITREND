@@ -6,6 +6,5 @@
 
 
 1) Home Page
-![alt text](https://drive.google.com/thumbnail?id=1UQbL-2WDvsniYuQhYXjDW_iyV8gpsqbC&sz=w457-h801)
-![alt text](https://drive.google.com/thumbnail?id=1B64uIzvsDrt77WsiorCYeQV8Q_8foXyc&sz=w442-h782)
-![alt text](https://drive.google.com/thumbnail?id=1Hl77-pblj45Az1AgpPe_7z1SPzrHja7e&sz=w445-h813)
+
+![alt text](https://drive.google.com/thumbnail?id=1UQbL-2WDvsniYuQhYXjDW_iyV8gpsqbC&sz=w457-h801)  ![alt text](https://drive.google.com/thumbnail?id=1B64uIzvsDrt77WsiorCYeQV8Q_8foXyc&sz=w442-h782)  ![alt text](https://drive.google.com/thumbnail?id=1Hl77-pblj45Az1AgpPe_7z1SPzrHja7e&sz=w445-h813)
